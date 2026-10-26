@@ -21,6 +21,7 @@ const user = ['-c', `user.name=${identity('user.name')}`, '-c', `user.email=${id
 const git = (...args) => execFileSync('git', [...user, ...args], { cwd: dist, stdio: 'inherit' });
 
 writeFileSync(path.join(dist, '.nojekyll'), '');
+writeFileSync(path.join(dist, 'CNAME'), 'play.apogea.dpdns.org\n');
 git('init', '-q', '-b', 'gh-pages');
 git('add', '-A');
 git('commit', '-q', '-m', `Deploy site ${commit}`);

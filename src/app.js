@@ -23,9 +23,9 @@
   /* ------------------------------------------------------------------ */
   const STRINGS = {
     en: {
-      'meta.title': 'Opengea — Launcher and custom Apogea client',
+      'meta.title': 'Opengea — Launcher and game client',
       'skip': 'Skip to content',
-      'brand.tagline': 'Custom<br/>Apogea client',
+      'brand.tagline': 'Launcher &amp;<br/>game client',
       'nav.label': 'Primary',
       'nav.home': 'Home',
       'nav.news': 'News',
@@ -69,7 +69,7 @@
       'hero.badge': 'CLIENT',
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
-      'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the custom Apogea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
+      'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
       'patch.title': 'Latest in v0.0.14',
       'patch.all': 'Full changelog →',
       'patch.1': 'Movement is now 100% server-side',
@@ -82,21 +82,21 @@
       'launcher.uptodate': 'Up to date',
       'launcher.tabs': 'Launcher preview',
       'launcher.tab0': '▶ Play Opengea',
-      'launcher.tab1': '🎉 Seasonal events',
-      'launcher.tab2': '🦌 Mounts',
+      'launcher.tab1': '⚔️ Bosses',
+      'launcher.tab2': '🧪 Lab of innovation',
       'launcher.verified': 'SHA-256 verified',
       'launcher.client': 'Client:',
       'launcher.synced': '100% verified',
       'launcher.play': 'INSTALL & PLAY',
       'launcher.s0.title': 'Welcome to Opengea',
-      'launcher.s0.sub': 'The custom Apogea client, always up to date.',
+      'launcher.s0.sub': 'An active community. Call your friends to take on quests and slay bosses.',
       'launcher.s0.status': 'Client {client} · Ready to play',
-      'launcher.s1.title': 'Seasonal events',
-      'launcher.s1.sub': 'Event news shows up right on the launcher home.',
+      'launcher.s1.title': 'Face the most feared bosses',
+      'launcher.s1.sub': 'The Pestilence Knight is waiting for a party brave enough.',
       'launcher.s1.status': 'News and patch notes · One click away',
-      'launcher.s2.title': 'Mounts and more',
-      'launcher.s2.sub': 'Highlights and announcements, straight from the team.',
-      'launcher.s2.status': 'Client {client} · Mounts built into the client',
+      'launcher.s2.title': 'Lab of innovation',
+      'launcher.s2.sub': 'We test your ideas, even a motorcycle in a medieval world. Your feedback is essential.',
+      'launcher.s2.status': 'Client {client} · New features in testing',
       'cat.update': 'Update',
       'cat.community': 'Community',
       'news.eyebrow': 'Dispatches from Opengea',
@@ -114,19 +114,16 @@
       'news.3.title': 'An active community',
       'news.3.text': 'Call your friends to take on quests and slay bosses together.',
       'news.readCommunity': 'See the screenshots',
-      'media.eyebrow': 'Community & artwork',
-      'media.title': 'Media & artwork',
+      'media.eyebrow': 'Community & lab',
+      'media.title': 'Media',
       'media.hint': 'Click any image to view it full size',
       'media.filters': 'Filter the gallery',
       'media.f.all': 'All',
       'media.f.community': 'Community',
       'media.f.lab': '🧪 Lab of innovation',
-      'media.f.art': 'Artwork',
-      'media.desc.all': 'Screenshots from the Opengea community, experiments from the lab and the launcher artwork.',
-      'media.desc.community': 'Real moments from Opengea, captured in game.',
+      'media.desc.all': 'Real moments from Opengea players and the experiments in our lab. Every picture here was taken in game.',
+      'media.desc.community': 'Parties, bosses and gatherings with the Game Master, captured in game by the community. Your adventure could be the next one here.',
       'media.desc.lab': 'The Lab of innovation is where we test new features, like mounts. Everything here is still in testing and may change, or never leave the lab.',
-      'media.desc.art': 'The artwork shown in the launcher.',
-      'media.cat.art': 'Launcher artwork',
       'media.cat.community': 'Community',
       'media.cat.lab': 'Lab · in testing',
       'media.open': 'Open {title} full size',
@@ -142,12 +139,6 @@
       'media.horse.sub': 'Completely for fun, and still in the testing lab.',
       'media.motorcycle': 'A motorcycle? Why not!',
       'media.motorcycle.sub': 'We hear your suggestions and build them, even the funny, completely out-of-place ones (why a motorcycle in a medieval game?). We implement and test your ideas: your feedback is essential.',
-      'media.heroes': 'The adventuring party',
-      'media.festival': 'Festival nights',
-      'media.stag': 'The golden stag',
-      'media.tower': 'The storm tower',
-      'media.campfire': 'Campfire tales',
-      'media.harvest': 'Harvest market',
       'how.eyebrow': 'Quick setup',
       'how.title': 'Enter Opengea in 3 steps',
       'how.lead': 'The launcher installs, updates and verifies the game for you, so you are always on the latest client.',
@@ -173,8 +164,8 @@
       'req.copy': 'Copy',
       'req.copied': 'SHA-256 copied to the clipboard',
       'req.copyFailed': 'Could not copy; select the hash instead',
-      'req.base': 'Based on',
-      'req.baseValue': 'Apogea client 3.2.6 (custom build)',
+      'req.base': 'Game client',
+      'req.baseValue': 'Opengea 3.2.6',
       'req.installed': 'Installed size',
       'req.free': 'Free space to install',
       'req.freeValue': '≈ 1.3 GB (during install)',
@@ -185,19 +176,19 @@
       'community.text': 'Every launcher and client build is published openly on GitHub with its notes. The launcher picks up new versions by itself; this is where you can read what changed.',
       'community.client': 'Client releases',
       'community.launcher': 'Launcher releases',
-      'footer.about': 'A community-made custom client and server for Apogea, with its own launcher that installs, updates and verifies the game.',
+      'footer.about': 'A community-made game client and server, with its own launcher that installs, updates and verifies the game.',
       'footer.game': 'Game',
       'footer.releases': 'Releases',
-      'footer.disclaimer': 'Opengea is a non-profit community project: 100% free, with no donations. It is not made by, affiliated with or endorsed by the developers of Apogea.',
+      'footer.disclaimer': 'Opengea is a non-profit community project: 100% free, with no donations. It is an unofficial fan project, not affiliated with or endorsed by any game studio or publisher.',
       'lightbox.close': 'Close',
       'lightbox.prev': 'Previous image',
       'lightbox.next': 'Next image',
       'lightbox.hint': 'Use ← / → keys or the arrows'
     },
     'pt-BR': {
-      'meta.title': 'Opengea — Launcher e cliente Apogea personalizado',
+      'meta.title': 'Opengea — Launcher e cliente do jogo',
       'skip': 'Pular para o conteúdo',
-      'brand.tagline': 'Cliente Apogea<br/>personalizado',
+      'brand.tagline': 'Launcher e<br/>cliente do jogo',
       'nav.label': 'Principal',
       'nav.home': 'Início',
       'nav.news': 'Notícias',
@@ -241,7 +232,7 @@
       'hero.badge': 'CLIENTE',
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
-      'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Apogea personalizado, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
+      'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
       'patch.title': 'Novidades da v0.0.14',
       'patch.all': 'Changelog completo →',
       'patch.1': 'A movimentação agora é 100% no servidor',
@@ -254,21 +245,21 @@
       'launcher.uptodate': 'Atualizado',
       'launcher.tabs': 'Prévia do launcher',
       'launcher.tab0': '▶ Jogar Opengea',
-      'launcher.tab1': '🎉 Eventos sazonais',
-      'launcher.tab2': '🦌 Montarias',
+      'launcher.tab1': '⚔️ Bosses',
+      'launcher.tab2': '🧪 Laboratório de inovação',
       'launcher.verified': 'SHA-256 verificado',
       'launcher.client': 'Cliente:',
       'launcher.synced': '100% verificado',
       'launcher.play': 'INSTALAR E JOGAR',
       'launcher.s0.title': 'Bem-vindo ao Opengea',
-      'launcher.s0.sub': 'O cliente Apogea personalizado, sempre atualizado.',
+      'launcher.s0.sub': 'Uma comunidade ativa. Chame seus amigos para fazer quests e matar bosses.',
       'launcher.s0.status': 'Cliente {client} · Pronto para jogar',
-      'launcher.s1.title': 'Eventos sazonais',
-      'launcher.s1.sub': 'As notícias de eventos aparecem direto no início do launcher.',
+      'launcher.s1.title': 'Enfrente os bosses mais temidos',
+      'launcher.s1.sub': 'O Pestilence Knight espera por um grupo corajoso o bastante.',
       'launcher.s1.status': 'Notícias e notas de atualização · A um clique',
-      'launcher.s2.title': 'Montarias e mais',
-      'launcher.s2.sub': 'Destaques e anúncios, direto da equipe.',
-      'launcher.s2.status': 'Cliente {client} · Montarias no próprio cliente',
+      'launcher.s2.title': 'Laboratório de inovação',
+      'launcher.s2.sub': 'Testamos suas ideias, até uma moto num mundo medieval. Seu feedback é essencial.',
+      'launcher.s2.status': 'Cliente {client} · Novidades em teste',
       'cat.update': 'Atualização',
       'cat.community': 'Comunidade',
       'news.eyebrow': 'Direto de Opengea',
@@ -286,19 +277,16 @@
       'news.3.title': 'Comunidade ativa',
       'news.3.text': 'Chame seus amigos para fazer quests e matar bosses juntos.',
       'news.readCommunity': 'Ver as capturas',
-      'media.eyebrow': 'Comunidade e artes',
-      'media.title': 'Mídia e artes',
+      'media.eyebrow': 'Comunidade e laboratório',
+      'media.title': 'Mídia',
       'media.hint': 'Clique em uma imagem para ver em tamanho real',
       'media.filters': 'Filtrar a galeria',
       'media.f.all': 'Tudo',
       'media.f.community': 'Comunidade',
       'media.f.lab': '🧪 Laboratório de inovação',
-      'media.f.art': 'Artes',
-      'media.desc.all': 'Capturas da comunidade Opengea, experimentos do laboratório e as artes do launcher.',
-      'media.desc.community': 'Momentos reais do Opengea, capturados no jogo.',
+      'media.desc.all': 'Momentos reais dos jogadores do Opengea e os experimentos do nosso laboratório. Todas as imagens foram capturadas no jogo.',
+      'media.desc.community': 'Grupos, bosses e encontros com o Game Master, capturados no jogo pela comunidade. Sua aventura pode ser a próxima aqui.',
       'media.desc.lab': 'O Laboratório de inovação é onde testamos novidades, como montarias. Tudo aqui ainda está em teste e pode mudar, ou nunca sair do laboratório.',
-      'media.desc.art': 'As artes exibidas no launcher.',
-      'media.cat.art': 'Arte do launcher',
       'media.cat.community': 'Comunidade',
       'media.cat.lab': 'Lab · em teste',
       'media.open': 'Abrir {title} em tamanho real',
@@ -314,12 +302,6 @@
       'media.horse.sub': 'Totalmente por diversão, e ainda no laboratório de testes.',
       'media.motorcycle': 'Uma moto? Por que não!',
       'media.motorcycle.sub': 'Ouvimos suas sugestões e implementamos, mesmo as engraçadas e totalmente fora de época (por que uma moto num jogo medieval?). Implementamos e testamos suas ideias: seu feedback é essencial.',
-      'media.heroes': 'O grupo de aventureiros',
-      'media.festival': 'Noites de festival',
-      'media.stag': 'O cervo dourado',
-      'media.tower': 'A torre da tempestade',
-      'media.campfire': 'Histórias na fogueira',
-      'media.harvest': 'Mercado da colheita',
       'how.eyebrow': 'Instalação rápida',
       'how.title': 'Entre em Opengea em 3 passos',
       'how.lead': 'O launcher instala, atualiza e verifica o jogo para você, então você está sempre na versão mais recente do cliente.',
@@ -345,8 +327,8 @@
       'req.copy': 'Copiar',
       'req.copied': 'SHA-256 copiado para a área de transferência',
       'req.copyFailed': 'Não foi possível copiar; selecione o hash',
-      'req.base': 'Baseado em',
-      'req.baseValue': 'Cliente Apogea 3.2.6 (versão personalizada)',
+      'req.base': 'Cliente do jogo',
+      'req.baseValue': 'Opengea 3.2.6',
       'req.installed': 'Tamanho instalado',
       'req.free': 'Espaço livre para instalar',
       'req.freeValue': '≈ 1,3 GB (durante a instalação)',
@@ -357,10 +339,10 @@
       'community.text': 'Toda versão do launcher e do cliente é publicada abertamente no GitHub, com as notas. O launcher pega as novas versões sozinho; aqui você lê o que mudou.',
       'community.client': 'Versões do cliente',
       'community.launcher': 'Versões do launcher',
-      'footer.about': 'Um cliente e servidor personalizados para Apogea, feitos pela comunidade, com um launcher próprio que instala, atualiza e verifica o jogo.',
+      'footer.about': 'Um cliente e servidor de jogo feitos pela comunidade, com um launcher próprio que instala, atualiza e verifica o jogo.',
       'footer.game': 'Jogo',
       'footer.releases': 'Versões',
-      'footer.disclaimer': 'Opengea é um projeto da comunidade sem fins lucrativos: 100% gratuito, sem doações. Não é feito, afiliado ou endossado pelos desenvolvedores de Apogea.',
+      'footer.disclaimer': 'Opengea é um projeto da comunidade sem fins lucrativos: 100% gratuito, sem doações. É um projeto não oficial, feito por fãs, sem afiliação ou endosso de nenhum estúdio ou distribuidora de jogos.',
       'lightbox.close': 'Fechar',
       'lightbox.prev': 'Imagem anterior',
       'lightbox.next': 'Próxima imagem',
@@ -368,24 +350,23 @@
     }
   };
 
-  // cat: 'community' (in-game screenshots), 'lab' (features in testing) or 'art' (launcher artwork); each is a gallery
-  // filter. Strings: media.<key>[.sub]. Screenshots are made with scripts/add_screenshot.py.
+  // cat: 'community' (in-game screenshots) or 'lab' (features in testing); each is a gallery filter.
+  // Strings: media.<key> and media.<key>.sub (the comment shown under each picture). Screenshots are made with scripts/add_screenshot.py.
   const MEDIA = [
     { key: 'gathering', img: 'shot-gathering', w: 'full', cat: 'community' },
     { key: 'active', img: 'shot-active', w: 'full', cat: 'community' },
     { key: 'boss', img: 'shot-boss', w: 'full', cat: 'community' },
     { key: 'title-screen', img: 'shot-title', w: 'full', cat: 'community' },
     { key: 'motorcycle', img: 'shot-motorcycle', w: 'full', cat: 'lab' },
-    { key: 'horse', img: 'shot-horse', w: 'full', cat: 'lab' },
-    { key: 'heroes', img: 'heroes', w: 1600, cat: 'art' },
-    { key: 'festival', img: 'festival', w: 1600, cat: 'art' },
-    { key: 'stag', img: 'stag', w: 1600, cat: 'art' },
-    { key: 'tower', img: 'tower', w: 1600, cat: 'art' },
-    { key: 'campfire', img: 'campfire', w: 800, cat: 'art' },
-    { key: 'harvest', img: 'harvest', w: 800, cat: 'art' }
+    { key: 'horse', img: 'shot-horse', w: 'full', cat: 'lab' }
   ];
 
-  const LAUNCHER_SLIDES = ['heroes', 'festival', 'stag'];
+  // The same slides as the launcher's Home carousel (opengea-launcher/content/carousel); w = width of the -full file.
+  const LAUNCHER_SLIDES = [
+    { img: 'shot-gathering', w: 1057 },
+    { img: 'shot-boss', w: 1536 },
+    { img: 'shot-motorcycle', w: 1110 }
+  ];
 
   /* ------------------------------------------------------------------ */
   /* Helpers                                                            */
@@ -504,12 +485,12 @@
       btn.tabIndex = i === idx ? 0 : -1;
       if (i === idx && focus) btn.focus();
     });
-    const name = LAUNCHER_SLIDES[idx];
+    const { img: name, w } = LAUNCHER_SLIDES[idx];
     const img = $('#vg-img');
     if (!img.src.includes(`${name}-800`)) {
       const fresh = img.cloneNode();
       fresh.src = `assets/img/${name}-800.webp`;
-      fresh.srcset = `assets/img/${name}-800.webp 800w, assets/img/${name}-1600.webp 1600w`;
+      fresh.srcset = `assets/img/${name}-800.webp 800w, assets/img/${name}-full.webp ${w}w`;
       img.replaceWith(fresh); // restarts the Ken Burns animation
     }
     $('#vg-stage').setAttribute('aria-labelledby', `vg-tab-${idx}`);
@@ -533,7 +514,7 @@
   }
 
   /* Media grid + lightbox ------------------------------------------- */
-  const CAT_STYLE = { community: 'text-success', lab: 'text-warning', art: 'text-txt-muted' };
+  const CAT_STYLE = { community: 'text-success', lab: 'text-warning' };
   let mediaFilter = 'all';
   const shownMedia = () => MEDIA.filter((m) => mediaFilter === 'all' || m.cat === mediaFilter);
 
@@ -554,9 +535,12 @@
               <span class="text-xs font-mono text-gold">⤢</span>
             </span>
           </span>
-          <span class="px-4 py-3 bg-panel border-t border-border text-xs text-txt-secondary flex items-center justify-between gap-3">
-            <span class="text-txt-primary font-medium">${t(`media.${m.key}`)}</span>
-            <span class="font-mono shrink-0 ${CAT_STYLE[m.cat]}">${t(`media.cat.${m.cat}`)}</span>
+          <span class="block px-4 py-3 bg-panel border-t border-border text-xs text-txt-secondary">
+            <span class="flex items-center justify-between gap-3">
+              <span class="text-txt-primary font-medium">${t(`media.${m.key}`)}</span>
+              <span class="font-mono shrink-0 ${CAT_STYLE[m.cat]}">${t(`media.cat.${m.cat}`)}</span>
+            </span>
+            <span class="block mt-1.5 leading-relaxed line-clamp-3">${t(`media.${m.key}.sub`)}</span>
           </span>
         </button>
       </li>`).join('');
@@ -569,10 +553,9 @@
     const m = items[lightboxIndex];
     const img = $('#lightbox-img');
     img.src = `assets/img/${m.img}-${m.w}.webp`;
-    const sub = STRINGS.en[`media.${m.key}.sub`] ? ` · ${t(`media.${m.key}.sub`)}` : '';
     img.alt = t(`media.${m.key}`);
     $('#lightbox-title').textContent = t(`media.${m.key}`);
-    $('#lightbox-caption').textContent = t(`media.cat.${m.cat}`) + sub;
+    $('#lightbox-caption').textContent = `${t(`media.cat.${m.cat}`)} · ${t(`media.${m.key}.sub`)}`;
     $('#lightbox-counter').textContent = `${lightboxIndex + 1} / ${items.length}`;
   }
 

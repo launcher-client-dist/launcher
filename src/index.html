@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Opengea — Launcher and custom Apogea client</title>
-  <meta name="description" content="Download the Opengea launcher for Windows: it installs the custom Apogea client, keeps it up to date and verifies your files." />
+  <title>Opengea — Launcher and game client</title>
+  <meta name="description" content="Download the Opengea launcher for Windows: it installs the Opengea client, keeps it up to date and verifies your files." />
   <meta name="theme-color" content="#08131F" />
   <meta name="color-scheme" content="dark" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Opengea" />
-  <meta property="og:title" content="Opengea — Launcher and custom Apogea client" />
+  <meta property="og:title" content="Opengea — Launcher and game client" />
   <meta property="og:description" content="One launcher installs, updates and verifies the Opengea client. Windows 10/11." />
   <meta property="og:image" content="https://play.apogea.dpdns.org/assets/img/og-image.jpg" />
   <meta property="og:url" content="https://play.apogea.dpdns.org/" />
@@ -35,7 +35,7 @@
 
         <a href="#top" class="flex items-center gap-3 group shrink-0" aria-label="Opengea">
           <img src="assets/img/logo-280.webp" width="140" height="52" alt="Opengea" class="h-9 sm:h-11 w-auto drop-shadow-[0_0_12px_rgba(210,168,75,0.35)] group-hover:brightness-110 transition" />
-          <span class="hidden xl:block text-[10px] font-mono uppercase tracking-[0.2em] text-txt-secondary leading-tight border-l border-border pl-3" data-i18n-html="brand.tagline">Custom<br/>Apogea client</span>
+          <span class="hidden xl:block text-[10px] font-mono uppercase tracking-[0.2em] text-txt-secondary leading-tight border-l border-border pl-3" data-i18n-html="brand.tagline">Launcher &amp;<br/>game client</span>
         </a>
 
         <nav id="desktop-nav" class="hidden xl:flex items-center gap-1" aria-label="Primary" data-i18n-attr="aria-label:nav.label">
@@ -117,7 +117,7 @@
               <span>● <span data-i18n="hero.badge">CLIENT</span> v<span data-rel="clientVersion">0.0.14</span> · <span data-i18n="hero.badge2">100% FREE</span></span>
             </div>
             <h1 class="type-h1 text-3xl sm:text-5xl text-txt-primary leading-tight mb-4" data-i18n="hero.title">YOUR ADVENTURE AWAITS IN OPENGEA.</h1>
-            <p class="text-sm sm:text-base text-txt-secondary mb-6 leading-relaxed" data-i18n-html="hero.lead">Download the <span data-rel="launcherSize">66 MB</span> Opengea launcher: it installs the custom Apogea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.</p>
+            <p class="text-sm sm:text-base text-txt-secondary mb-6 leading-relaxed" data-i18n-html="hero.lead">Download the <span data-rel="launcherSize">66 MB</span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.</p>
 
             <div id="hero-cta" class="mb-6" data-cta>
               <a href="https://github.com/launcher-client-dist/launcher/releases/latest/download/ClientLauncher.exe" class="inline-flex px-9 py-4 rounded-xl bg-gold text-bg font-bold text-lg shadow-gold-glow">DOWNLOAD LAUNCHER</a>
@@ -165,8 +165,8 @@
                 <div class="sm:col-span-4 xl:col-span-3 bg-[#07101B] border-b sm:border-b-0 sm:border-r border-border p-3 flex sm:flex-col justify-between gap-2">
                   <div class="flex sm:flex-col gap-1.5 overflow-x-auto" role="tablist" aria-label="Launcher preview" data-i18n-attr="aria-label:launcher.tabs">
                     <button type="button" role="tab" id="vg-tab-0" class="vg-tab" aria-selected="true" aria-controls="vg-stage" data-i18n="launcher.tab0">▶ Play Opengea</button>
-                    <button type="button" role="tab" id="vg-tab-1" class="vg-tab" aria-selected="false" aria-controls="vg-stage" tabindex="-1" data-i18n="launcher.tab1">🎉 Seasonal events</button>
-                    <button type="button" role="tab" id="vg-tab-2" class="vg-tab" aria-selected="false" aria-controls="vg-stage" tabindex="-1" data-i18n="launcher.tab2">🦌 Mounts</button>
+                    <button type="button" role="tab" id="vg-tab-1" class="vg-tab" aria-selected="false" aria-controls="vg-stage" tabindex="-1" data-i18n="launcher.tab1">⚔️ Bosses</button>
+                    <button type="button" role="tab" id="vg-tab-2" class="vg-tab" aria-selected="false" aria-controls="vg-stage" tabindex="-1" data-i18n="launcher.tab2">🧪 Lab of innovation</button>
                   </div>
                   <div class="hidden sm:block pt-3 border-t border-border text-[10px] font-mono text-txt-muted">
                     <span data-i18n="launcher.verified">SHA-256 verified</span><br/><span data-i18n="launcher.client">Client:</span> <span data-rel="clientInstalled">757 MB</span>
@@ -176,11 +176,11 @@
                 <!-- Main stage -->
                 <div class="sm:col-span-8 xl:col-span-9 p-5 flex flex-col justify-between bg-panel">
                   <div id="vg-stage" role="tabpanel" aria-labelledby="vg-tab-0" class="h-52 sm:h-60 rounded-xl overflow-hidden border border-border relative mb-4 bg-[#060E18]">
-                    <img id="vg-img" src="assets/img/heroes-800.webp" srcset="assets/img/heroes-800.webp 800w, assets/img/heroes-1600.webp 1600w" sizes="(min-width: 1024px) 560px, 100vw" alt="" class="absolute inset-0 w-full h-full object-cover animate-ken-burns" />
+                    <img id="vg-img" src="assets/img/shot-gathering-800.webp" srcset="assets/img/shot-gathering-800.webp 800w, assets/img/shot-gathering-full.webp 1057w" sizes="(min-width: 1024px) 560px, 100vw" alt="" class="absolute inset-0 w-full h-full object-cover animate-ken-burns" />
                     <div class="absolute inset-0 bg-gradient-to-t from-bg/90 via-bg/20 to-transparent"></div>
                     <div class="absolute left-4 right-4 bottom-4">
                       <h2 id="vg-title" class="type-h3 text-lg sm:text-xl text-txt-primary" data-i18n="launcher.s0.title">Welcome to Opengea</h2>
-                      <p id="vg-sub" class="text-xs text-txt-secondary mt-1" data-i18n="launcher.s0.sub">The custom Apogea client, always up to date.</p>
+                      <p id="vg-sub" class="text-xs text-txt-secondary mt-1" data-i18n="launcher.s0.sub">An active community. Call your friends to take on quests and slay bosses.</p>
                     </div>
                   </div>
 
@@ -223,7 +223,7 @@
             <article class="group relative rounded-xl bg-panel border border-border overflow-hidden shadow-card card-interactive flex flex-col justify-between">
               <div>
                 <div class="h-44 relative overflow-hidden border-b border-border">
-                  <img src="assets/img/heroes-800.webp" width="800" height="206" loading="lazy" alt="" class="w-full h-full object-cover" />
+                  <img src="assets/img/shot-boss-800.webp" width="800" height="450" loading="lazy" alt="" class="w-full h-full object-cover" />
                   <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md border text-gold border-gold/40 bg-gold/10 text-[11px] font-semibold uppercase tracking-wider backdrop-blur-sm" data-i18n="cat.update">Update</span>
                 </div>
                 <div class="p-5 sm:p-6">
@@ -240,7 +240,7 @@
             <article class="group relative rounded-xl bg-panel border border-border overflow-hidden shadow-card card-interactive flex flex-col justify-between">
               <div>
                 <div class="h-44 relative overflow-hidden border-b border-border">
-                  <img src="assets/img/tower-800.webp" width="800" height="206" loading="lazy" alt="" class="w-full h-full object-cover" />
+                  <img src="assets/img/shot-title-800.webp" width="800" height="499" loading="lazy" alt="" class="w-full h-full object-cover" />
                   <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md border text-gold border-gold/40 bg-gold/10 text-[11px] font-semibold uppercase tracking-wider backdrop-blur-sm" data-i18n="cat.update">Update</span>
                 </div>
                 <div class="p-5 sm:p-6">
@@ -280,8 +280,8 @@
       <section id="media" class="max-w-[1280px] mx-auto px-4 sm:px-8 py-20 w-full">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
           <div>
-            <span class="text-xs font-mono uppercase tracking-[0.2em] text-gold block mb-2" data-i18n="media.eyebrow">Community &amp; artwork</span>
-            <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary" data-i18n="media.title">Media &amp; artwork</h2>
+            <span class="text-xs font-mono uppercase tracking-[0.2em] text-gold block mb-2" data-i18n="media.eyebrow">Community &amp; lab</span>
+            <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary" data-i18n="media.title">Media</h2>
           </div>
           <p class="text-xs text-txt-secondary font-mono" data-i18n="media.hint">Click any image to view it full size</p>
         </div>
@@ -290,9 +290,8 @@
           <button type="button" class="media-chip" data-media-filter="all" aria-pressed="true" data-i18n="media.f.all">All</button>
           <button type="button" class="media-chip" data-media-filter="community" aria-pressed="false" data-i18n="media.f.community">Community</button>
           <button type="button" class="media-chip" data-media-filter="lab" aria-pressed="false" data-i18n="media.f.lab">🧪 Lab of innovation</button>
-          <button type="button" class="media-chip" data-media-filter="art" aria-pressed="false" data-i18n="media.f.art">Artwork</button>
         </div>
-        <p id="media-desc" class="media-desc mb-8" aria-live="polite">Screenshots from the Opengea community, experiments from the lab and the launcher artwork.</p>
+        <p id="media-desc" class="media-desc mb-8" aria-live="polite">Real moments from Opengea players and the experiments in our lab. Every picture here was taken in game.</p>
 
         <ul id="media-grid" class="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 overflow-x-auto sm:overflow-visible pb-4 sm:pb-0 snap-x snap-mandatory">
           <!-- Rendered by app.js from MEDIA -->
@@ -387,7 +386,7 @@
               <span class="px-2.5 py-1 rounded bg-gold/15 border border-gold/40 text-xs font-mono text-gold">v<span data-rel="clientVersion">0.0.14</span></span>
             </div>
             <dl class="space-y-4 text-sm">
-              <div class="flex justify-between gap-4"><dt class="text-txt-secondary" data-i18n="req.base">Based on</dt><dd class="text-txt-primary font-medium text-right" data-i18n="req.baseValue">Apogea client 3.2.6 (custom build)</dd></div>
+              <div class="flex justify-between gap-4"><dt class="text-txt-secondary" data-i18n="req.base">Game client</dt><dd class="text-txt-primary font-medium text-right" data-i18n="req.baseValue">Opengea 3.2.6</dd></div>
               <div class="flex justify-between gap-4"><dt class="text-txt-secondary" data-i18n="req.download">Download</dt><dd class="text-txt-primary font-medium text-right" data-rel="clientSize">488 MB</dd></div>
               <div class="flex justify-between gap-4"><dt class="text-txt-secondary" data-i18n="req.installed">Installed size</dt><dd class="text-txt-primary font-medium text-right" data-rel="clientInstalled">757 MB</dd></div>
               <div class="flex justify-between gap-4"><dt class="text-txt-secondary" data-i18n="req.free">Free space to install</dt><dd class="text-txt-primary font-medium text-right" data-i18n="req.freeValue">≈ 1.3 GB (during install)</dd></div>
@@ -402,7 +401,7 @@
       <!-- ================================================================= -->
       <section class="max-w-[1280px] mx-auto px-4 sm:px-8 pb-20 w-full">
         <div class="rounded-2xl bg-gradient-to-r from-[#121F36] via-[#0E1B2A] to-[#15263F] border border-teal/40 p-8 sm:p-12 relative overflow-hidden shadow-card">
-          <img src="assets/img/stag-800.webp" width="800" height="206" loading="lazy" alt="" class="absolute right-0 top-0 h-full w-1/2 object-cover object-right opacity-25 pointer-events-none hidden lg:block [mask-image:linear-gradient(to_right,transparent,black_60%)]" />
+          <img src="assets/img/shot-horse-800.webp" width="800" height="608" loading="lazy" alt="" class="absolute right-0 top-0 h-full w-1/2 object-cover object-right opacity-25 pointer-events-none hidden lg:block [mask-image:linear-gradient(to_right,transparent,black_60%)]" />
 
           <div class="relative z-10 max-w-[640px]">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-success/15 border border-success/40 text-success text-xs font-medium mb-4">
@@ -432,7 +431,7 @@
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-border">
           <div class="md:col-span-5">
             <img src="assets/img/logo-280.webp" width="140" height="52" alt="Opengea" loading="lazy" class="h-10 w-auto mb-4" />
-            <p class="text-sm text-txt-secondary max-w-[380px] mb-5" data-i18n="footer.about">A community-made custom client and server for Apogea, with its own launcher that installs, updates and verifies the game.</p>
+            <p class="text-sm text-txt-secondary max-w-[380px] mb-5" data-i18n="footer.about">A community-made game client and server, with its own launcher that installs, updates and verifies the game.</p>
             <a href="https://github.com/launcher-client-dist" target="_blank" rel="noopener" aria-label="Opengea on GitHub" class="w-10 h-10 rounded-lg bg-panel border border-border hover:border-gold flex items-center justify-center text-txt-secondary hover:text-gold transition-colors">
               <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             </a>
@@ -471,7 +470,7 @@
 
         <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-txt-muted">
           <div>© 2026 Opengea</div>
-          <div class="text-center sm:text-right max-w-[640px]" data-i18n="footer.disclaimer">Opengea is a non-profit community project: 100% free, with no donations. It is not made by, affiliated with or endorsed by the developers of Apogea.</div>
+          <div class="text-center sm:text-right max-w-[640px]" data-i18n="footer.disclaimer">Opengea is a non-profit community project: 100% free, with no donations. It is an unofficial fan project, not affiliated with or endorsed by any game studio or publisher.</div>
         </div>
       </div>
     </footer>
