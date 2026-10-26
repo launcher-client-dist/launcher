@@ -26,7 +26,8 @@ npm run serve          # build, then http://localhost:8080
   GitHub API (`launcher-client-dist/launcher`, `launcher-client-dist/dist`); the values in `app.js` (`release`) and in
   the HTML are the fallback. Update them with each release so the page is right even without the API.
 * **"Latest in vX" and the news cards** are written by hand in `index.html` and `app.js` (both languages).
-* **Images** come from the launcher's `content/` folder, converted to webp.
+* **Images**: the artwork comes from the launcher's `content/` folder; game screenshots (Community, Lab of innovation)
+  are converted with `python scripts/add_screenshot.py <image> <name>` and listed in `MEDIA` in `app.js`.
 
 ## Deploy
 

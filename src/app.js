@@ -117,8 +117,18 @@
       'media.eyebrow': 'Community & artwork',
       'media.title': 'Media & artwork',
       'media.hint': 'Click any image to view it full size',
+      'media.filters': 'Filter the gallery',
+      'media.f.all': 'All',
+      'media.f.community': 'Community',
+      'media.f.lab': '🧪 Lab of innovation',
+      'media.f.art': 'Artwork',
+      'media.desc.all': 'Screenshots from the Opengea community, experiments from the lab and the launcher artwork.',
+      'media.desc.community': 'Real moments from Opengea, captured in game.',
+      'media.desc.lab': 'The Lab of innovation is where we test new features, like mounts. Everything here is still in testing and may change, or never leave the lab.',
+      'media.desc.art': 'The artwork shown in the launcher.',
       'media.cat.art': 'Launcher artwork',
       'media.cat.community': 'Community',
+      'media.cat.lab': 'Lab · in testing',
       'media.open': 'Open {title} full size',
       'media.gathering': 'Community gathering',
       'media.gathering.sub': 'Players gathered with the Game Master.',
@@ -126,6 +136,12 @@
       'media.active.sub': 'Call your friends to take on quests and slay bosses.',
       'media.boss': 'Pestilence Knight',
       'media.boss.sub': 'Face the most feared bosses in the game.',
+      'media.title-screen': 'The Opengea title screen',
+      'media.title-screen.sub': 'Log in or create your account right in the client.',
+      'media.horse': 'Horse mount',
+      'media.horse.sub': 'Completely for fun, and still in the testing lab.',
+      'media.motorcycle': 'A motorcycle? Why not!',
+      'media.motorcycle.sub': 'We hear your suggestions and build them, even the funny, completely out-of-place ones (why a motorcycle in a medieval game?). We implement and test your ideas: your feedback is essential.',
       'media.heroes': 'The adventuring party',
       'media.festival': 'Festival nights',
       'media.stag': 'The golden stag',
@@ -273,8 +289,18 @@
       'media.eyebrow': 'Comunidade e artes',
       'media.title': 'Mídia e artes',
       'media.hint': 'Clique em uma imagem para ver em tamanho real',
+      'media.filters': 'Filtrar a galeria',
+      'media.f.all': 'Tudo',
+      'media.f.community': 'Comunidade',
+      'media.f.lab': '🧪 Laboratório de inovação',
+      'media.f.art': 'Artes',
+      'media.desc.all': 'Capturas da comunidade Opengea, experimentos do laboratório e as artes do launcher.',
+      'media.desc.community': 'Momentos reais do Opengea, capturados no jogo.',
+      'media.desc.lab': 'O Laboratório de inovação é onde testamos novidades, como montarias. Tudo aqui ainda está em teste e pode mudar, ou nunca sair do laboratório.',
+      'media.desc.art': 'As artes exibidas no launcher.',
       'media.cat.art': 'Arte do launcher',
       'media.cat.community': 'Comunidade',
+      'media.cat.lab': 'Lab · em teste',
       'media.open': 'Abrir {title} em tamanho real',
       'media.gathering': 'Encontro da comunidade',
       'media.gathering.sub': 'Jogadores reunidos com o Game Master.',
@@ -282,6 +308,12 @@
       'media.active.sub': 'Chame seus amigos para fazer quests e matar bosses.',
       'media.boss': 'Pestilence Knight',
       'media.boss.sub': 'Enfrente os bosses mais temidos do jogo.',
+      'media.title-screen': 'A tela inicial do Opengea',
+      'media.title-screen.sub': 'Entre ou crie sua conta direto no cliente.',
+      'media.horse': 'Montaria cavalo',
+      'media.horse.sub': 'Totalmente por diversão, e ainda no laboratório de testes.',
+      'media.motorcycle': 'Uma moto? Por que não!',
+      'media.motorcycle.sub': 'Ouvimos suas sugestões e implementamos, mesmo as engraçadas e totalmente fora de época (por que uma moto num jogo medieval?). Implementamos e testamos suas ideias: seu feedback é essencial.',
       'media.heroes': 'O grupo de aventureiros',
       'media.festival': 'Noites de festival',
       'media.stag': 'O cervo dourado',
@@ -336,11 +368,15 @@
     }
   };
 
-  // cat: 'community' (in-game screenshots from players) or 'art' (launcher artwork). Strings: media.<key>[.sub].
+  // cat: 'community' (in-game screenshots), 'lab' (features in testing) or 'art' (launcher artwork); each is a gallery
+  // filter. Strings: media.<key>[.sub]. Screenshots are made with scripts/add_screenshot.py.
   const MEDIA = [
-    { key: 'gathering', img: 'community-gathering', w: 'full', cat: 'community' },
-    { key: 'active', img: 'community-active', w: 'full', cat: 'community' },
-    { key: 'boss', img: 'community-boss', w: 'full', cat: 'community' },
+    { key: 'gathering', img: 'shot-gathering', w: 'full', cat: 'community' },
+    { key: 'active', img: 'shot-active', w: 'full', cat: 'community' },
+    { key: 'boss', img: 'shot-boss', w: 'full', cat: 'community' },
+    { key: 'title-screen', img: 'shot-title', w: 'full', cat: 'community' },
+    { key: 'motorcycle', img: 'shot-motorcycle', w: 'full', cat: 'lab' },
+    { key: 'horse', img: 'shot-horse', w: 'full', cat: 'lab' },
     { key: 'heroes', img: 'heroes', w: 1600, cat: 'art' },
     { key: 'festival', img: 'festival', w: 1600, cat: 'art' },
     { key: 'stag', img: 'stag', w: 1600, cat: 'art' },
@@ -497,19 +533,17 @@
   }
 
   /* Media grid + lightbox ------------------------------------------- */
-  // Items whose image is not on the server (a screenshot not added yet) are left out of the grid and the lightbox.
-  const missingMedia = new Set();
-  const shownMedia = () => MEDIA.filter((m) => !missingMedia.has(m.key));
-
-  function probeMedia() {
-    MEDIA.filter((m) => m.cat === 'community').forEach((m) => {
-      const probe = new Image();
-      probe.onerror = () => { missingMedia.add(m.key); renderMedia(); };
-      probe.src = `assets/img/${m.img}-800.webp`;
-    });
-  }
+  const CAT_STYLE = { community: 'text-success', lab: 'text-warning', art: 'text-txt-muted' };
+  let mediaFilter = 'all';
+  const shownMedia = () => MEDIA.filter((m) => mediaFilter === 'all' || m.cat === mediaFilter);
 
   function renderMedia() {
+    $$('[data-media-filter]').forEach((btn) => {
+      btn.setAttribute('aria-pressed', String(btn.getAttribute('data-media-filter') === mediaFilter));
+    });
+    const desc = $('#media-desc');
+    desc.textContent = t(`media.desc.${mediaFilter}`);
+    desc.classList.toggle('lab', mediaFilter === 'lab');
     const grid = $('#media-grid');
     grid.innerHTML = shownMedia().map((m, i) => `
       <li class="snap-start shrink-0 w-[85%] sm:w-auto">
@@ -522,7 +556,7 @@
           </span>
           <span class="px-4 py-3 bg-panel border-t border-border text-xs text-txt-secondary flex items-center justify-between gap-3">
             <span class="text-txt-primary font-medium">${t(`media.${m.key}`)}</span>
-            <span class="font-mono ${m.cat === 'community' ? 'text-success' : 'text-txt-muted'}">${t(`media.cat.${m.cat}`)}</span>
+            <span class="font-mono shrink-0 ${CAT_STYLE[m.cat]}">${t(`media.cat.${m.cat}`)}</span>
           </span>
         </button>
       </li>`).join('');
@@ -550,6 +584,10 @@
       showLightbox(Number(btn.getAttribute('data-media')));
       dlg.showModal();
     });
+    $$('[data-media-filter]').forEach((btn) => btn.addEventListener('click', () => {
+      mediaFilter = btn.getAttribute('data-media-filter');
+      renderMedia();
+    }));
     $('#lightbox-close').addEventListener('click', () => dlg.close());
     $('#lightbox-prev').addEventListener('click', () => showLightbox(lightboxIndex - 1));
     $('#lightbox-next').addEventListener('click', () => showLightbox(lightboxIndex + 1));
@@ -682,7 +720,6 @@
   if (isHome) {
     initLauncherTabs();
     initLightbox();
-    probeMedia();
     initScrollSpy();
     initCopy();
   }

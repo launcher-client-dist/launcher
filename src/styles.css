@@ -49,6 +49,11 @@
   .vg-tab[aria-selected="true"] { @apply font-semibold bg-gold/15 text-gold border-gold/40 hover:text-gold; }
 
   .tag { @apply px-1.5 py-0.5 rounded font-mono text-[10px] shrink-0; }
+
+  .media-chip { @apply px-4 py-2 rounded-lg text-sm font-medium bg-panel border border-border text-txt-secondary hover:text-txt-primary transition-colors; }
+  .media-chip[aria-pressed="true"] { @apply font-semibold bg-gold text-bg border-gold hover:text-bg; }
+  .media-desc { @apply text-sm text-txt-secondary max-w-[760px]; }
+  .media-desc.lab { @apply rounded-xl bg-warning/10 border border-warning/40 text-txt-primary px-4 py-3; }
 }
 
 /* Motion */

@@ -257,7 +257,7 @@
             <article class="group relative rounded-xl bg-panel border border-border overflow-hidden shadow-card card-interactive flex flex-col justify-between">
               <div>
                 <div class="h-44 relative overflow-hidden border-b border-border">
-                  <img src="assets/img/community-active-800.webp" width="800" height="602" loading="lazy" alt="" onerror="this.onerror=null;this.src='assets/img/campfire-800.webp'" class="w-full h-full object-cover" />
+                  <img src="assets/img/shot-active-800.webp" width="800" height="602" loading="lazy" alt="" class="w-full h-full object-cover" />
                   <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md border text-success border-success/40 bg-success/10 text-[11px] font-semibold uppercase tracking-wider backdrop-blur-sm" data-i18n="cat.community">Community</span>
                 </div>
                 <div class="p-5 sm:p-6">
@@ -275,7 +275,7 @@
       </section>
 
       <!-- ================================================================= -->
-      <!-- MEDIA (3x2 grid / horizontal snap on mobile + lightbox)           -->
+      <!-- MEDIA (filters, 3-col grid / horizontal snap on mobile, lightbox) -->
       <!-- ================================================================= -->
       <section id="media" class="max-w-[1280px] mx-auto px-4 sm:px-8 py-20 w-full">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
@@ -285,6 +285,14 @@
           </div>
           <p class="text-xs text-txt-secondary font-mono" data-i18n="media.hint">Click any image to view it full size</p>
         </div>
+
+        <div class="flex items-center gap-2 flex-wrap mb-4" role="group" aria-label="Filter the gallery" data-i18n-attr="aria-label:media.filters">
+          <button type="button" class="media-chip" data-media-filter="all" aria-pressed="true" data-i18n="media.f.all">All</button>
+          <button type="button" class="media-chip" data-media-filter="community" aria-pressed="false" data-i18n="media.f.community">Community</button>
+          <button type="button" class="media-chip" data-media-filter="lab" aria-pressed="false" data-i18n="media.f.lab">🧪 Lab of innovation</button>
+          <button type="button" class="media-chip" data-media-filter="art" aria-pressed="false" data-i18n="media.f.art">Artwork</button>
+        </div>
+        <p id="media-desc" class="media-desc mb-8" aria-live="polite">Screenshots from the Opengea community, experiments from the lab and the launcher artwork.</p>
 
         <ul id="media-grid" class="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 overflow-x-auto sm:overflow-visible pb-4 sm:pb-0 snap-x snap-mandatory">
           <!-- Rendered by app.js from MEDIA -->
