@@ -33,6 +33,25 @@
       'nav.how': 'How to play',
       'nav.req': 'Requirements',
       'nav.patches': 'Patch notes',
+      'nav.legal': 'Legal',
+      'footer.legal': 'Legal',
+      'footer.legalNote': 'Non-profit · 100% free · no donations',
+      'legal.eyebrow': 'Legal documents',
+      'legal.title': 'Legal & privacy',
+      'legal.lead': 'Opengea is a non-profit project made by members of the community who love the game. It is 100% free: there are no donations, no shop and nothing for sale. Here is everything about how it works.',
+      'legal.badge1': '✓ 100% free',
+      'legal.badge2': '✓ Non-profit',
+      'legal.badge3': '✓ No donations',
+      'legal.badge4': '✓ No data shared or sold',
+      'legal.notice': 'Legal notice',
+      'legal.noticeDesc': 'Who we are, non-profit, no affiliation',
+      'legal.rules': 'Rules',
+      'legal.rulesDesc': 'Game rules and player conduct',
+      'legal.terms': 'Terms of use',
+      'legal.termsDesc': 'The conditions for using Opengea',
+      'legal.privacy': 'Privacy',
+      'legal.privacyDesc': 'What is stored, and what never leaves',
+      'legal.metaTitle': 'Legal — Opengea',
       'pill.title': 'Latest client release',
       'pill.client': 'Client',
       'lang.code': 'PT',
@@ -48,7 +67,7 @@
       'cta.otherOs': 'Opengea runs on Windows 10/11 (64-bit). Download it on your Windows PC.',
       'os.windows': 'Windows 10/11',
       'hero.badge': 'CLIENT',
-      'hero.badge2': 'WINDOWS 10/11',
+      'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the custom Apogea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
       'patch.title': 'Latest in v0.0.14',
@@ -153,9 +172,7 @@
       'footer.about': 'A community-made custom client and server for Apogea, with its own launcher that installs, updates and verifies the game.',
       'footer.game': 'Game',
       'footer.releases': 'Releases',
-      'footer.privacy': 'Privacy',
-      'footer.privacyText': 'This site sets no cookies and has no tracking. It only asks GitHub for the latest release numbers.',
-      'footer.disclaimer': 'Opengea is an unofficial community project. It is not made by, affiliated with or endorsed by the developers of Apogea.',
+      'footer.disclaimer': 'Opengea is a non-profit community project: 100% free, with no donations. It is not made by, affiliated with or endorsed by the developers of Apogea.',
       'lightbox.close': 'Close',
       'lightbox.prev': 'Previous image',
       'lightbox.next': 'Next image',
@@ -172,6 +189,25 @@
       'nav.how': 'Como jogar',
       'nav.req': 'Requisitos',
       'nav.patches': 'Notas de atualização',
+      'nav.legal': 'Legal',
+      'footer.legal': 'Legal',
+      'footer.legalNote': 'Sem fins lucrativos · 100% gratuito · sem doações',
+      'legal.eyebrow': 'Documentos legais',
+      'legal.title': 'Legal e privacidade',
+      'legal.lead': 'O Opengea é um projeto sem fins lucrativos feito por membros da comunidade que gostam do jogo. Ele é 100% gratuito: não há doações, loja nem nada à venda. Aqui está tudo sobre como ele funciona.',
+      'legal.badge1': '✓ 100% gratuito',
+      'legal.badge2': '✓ Sem fins lucrativos',
+      'legal.badge3': '✓ Sem doações',
+      'legal.badge4': '✓ Nenhum dado compartilhado ou vendido',
+      'legal.notice': 'Aviso legal',
+      'legal.noticeDesc': 'Quem somos, sem fins lucrativos, sem afiliação',
+      'legal.rules': 'Regras',
+      'legal.rulesDesc': 'Regras do jogo e conduta dos jogadores',
+      'legal.terms': 'Termos de uso',
+      'legal.termsDesc': 'As condições para usar o Opengea',
+      'legal.privacy': 'Privacidade',
+      'legal.privacyDesc': 'O que é guardado, e o que nunca sai daqui',
+      'legal.metaTitle': 'Legal — Opengea',
       'pill.title': 'Versão mais recente do cliente',
       'pill.client': 'Cliente',
       'lang.code': 'EN',
@@ -187,7 +223,7 @@
       'cta.otherOs': 'O Opengea roda no Windows 10/11 (64 bits). Baixe no seu PC com Windows.',
       'os.windows': 'Windows 10/11',
       'hero.badge': 'CLIENTE',
-      'hero.badge2': 'WINDOWS 10/11',
+      'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Apogea personalizado, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
       'patch.title': 'Novidades da v0.0.14',
@@ -292,9 +328,7 @@
       'footer.about': 'Um cliente e servidor personalizados para Apogea, feitos pela comunidade, com um launcher próprio que instala, atualiza e verifica o jogo.',
       'footer.game': 'Jogo',
       'footer.releases': 'Versões',
-      'footer.privacy': 'Privacidade',
-      'footer.privacyText': 'Este site não usa cookies nem rastreamento. Ele só consulta o GitHub para saber as versões mais recentes.',
-      'footer.disclaimer': 'Opengea é um projeto não oficial da comunidade. Não é feito, afiliado ou endossado pelos desenvolvedores de Apogea.',
+      'footer.disclaimer': 'Opengea é um projeto da comunidade sem fins lucrativos: 100% gratuito, sem doações. Não é feito, afiliado ou endossado pelos desenvolvedores de Apogea.',
       'lightbox.close': 'Fechar',
       'lightbox.prev': 'Imagem anterior',
       'lightbox.next': 'Próxima imagem',
@@ -364,7 +398,16 @@
 
   function applyStrings() {
     document.documentElement.lang = lang;
-    document.title = t('meta.title');
+    document.title = t(document.body.dataset.title || 'meta.title');
+    // Blocks written per language: show the current one; its sections own the plain #anchors.
+    $$('[data-lang]').forEach((block) => {
+      const shown = block.getAttribute('data-lang') === lang;
+      block.hidden = !shown;
+      $$('[data-anchor]', block).forEach((sec) => {
+        const anchor = sec.getAttribute('data-anchor');
+        sec.id = shown ? anchor : `${anchor}-${block.getAttribute('data-lang')}`;
+      });
+    });
     $$('[data-i18n]').forEach((el) => { el.textContent = t(el.getAttribute('data-i18n')); });
     // Only our own strings above go through innerHTML.
     $$('[data-i18n-html]').forEach((el) => { el.innerHTML = t(el.getAttribute('data-i18n-html')); });
@@ -582,9 +625,12 @@
   }
 
   /* Language --------------------------------------------------------- */
+  const isHome = Boolean($('#vg-stage'));
+
   function render() {
     applyStrings();
     applyRelease();
+    if (!isHome) return;
     renderCTAs();
     renderMedia();
     setLauncherTab(currentTab);
@@ -627,18 +673,22 @@
       if (pkg) release.clientBytes = pkg.size;
     }
     applyRelease();
+    if (!isHome) return;
     renderCTAs();
     setLauncherTab(currentTab);
   }
 
   /* Boot ------------------------------------------------------------- */
-  initLauncherTabs();
-  initLightbox();
-  probeMedia();
+  if (isHome) {
+    initLauncherTabs();
+    initLightbox();
+    probeMedia();
+    initScrollSpy();
+    initCopy();
+  }
   initDrawer();
-  initScrollSpy();
-  initCopy();
   initLang();
   render();
-  refreshRelease().catch(() => { /* keep the baked-in values */ });
+  if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  if (isHome) refreshRelease().catch(() => { /* keep the baked-in values */ });
 })();

@@ -19,7 +19,7 @@ execFileSync(process.execPath, [tailwind, '-c', path.join(root, 'tailwind.config
 
 const hash = (file) => createHash('sha256').update(readFileSync(path.join(dist, file))).digest('hex').slice(0, 10);
 const versions = { 'styles.css': hash('styles.css'), 'app.js': hash('app.js') };
-for (const page of ['index.html', '404.html']) {
+for (const page of ['index.html', 'legal.html', '404.html']) {
   const file = path.join(dist, page);
   let html = readFileSync(file, 'utf8');
   for (const [asset, v] of Object.entries(versions)) {
