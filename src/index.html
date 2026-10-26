@@ -35,10 +35,10 @@
 
         <a href="#top" class="flex items-center gap-3 group shrink-0" aria-label="Opengea">
           <img src="assets/img/logo-280.webp" width="140" height="52" alt="Opengea" class="h-9 sm:h-11 w-auto drop-shadow-[0_0_12px_rgba(210,168,75,0.35)] group-hover:brightness-110 transition" />
-          <span class="hidden md:block text-[10px] font-mono uppercase tracking-[0.2em] text-txt-secondary leading-tight border-l border-border pl-3" data-i18n-html="brand.tagline">Custom<br/>Apogea client</span>
+          <span class="hidden xl:block text-[10px] font-mono uppercase tracking-[0.2em] text-txt-secondary leading-tight border-l border-border pl-3" data-i18n-html="brand.tagline">Custom<br/>Apogea client</span>
         </a>
 
-        <nav id="desktop-nav" class="hidden lg:flex items-center gap-1" aria-label="Primary" data-i18n-attr="aria-label:nav.label">
+        <nav id="desktop-nav" class="hidden xl:flex items-center gap-1" aria-label="Primary" data-i18n-attr="aria-label:nav.label">
           <a href="#top" class="nav-link" data-spy="top" aria-current="true" data-i18n="nav.home">Home</a>
           <a href="#news" class="nav-link" data-spy="news" data-i18n="nav.news">News</a>
           <a href="#media" class="nav-link" data-spy="media" data-i18n="nav.media">Media</a>
@@ -61,7 +61,7 @@
             <span data-i18n="cta.short">Download</span>
           </a>
 
-          <button type="button" id="menu-open" class="lg:hidden p-2.5 rounded-lg bg-panel border border-border text-txt-primary hover:border-gold transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer" data-i18n-attr="aria-label:menu.open">
+          <button type="button" id="menu-open" class="xl:hidden p-2.5 rounded-lg bg-panel border border-border text-txt-primary hover:border-gold transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer" data-i18n-attr="aria-label:menu.open">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
@@ -162,7 +162,7 @@
 
               <div class="grid grid-cols-1 sm:grid-cols-12">
                 <!-- Sidebar -->
-                <div class="sm:col-span-3 bg-[#07101B] border-b sm:border-b-0 sm:border-r border-border p-3 flex sm:flex-col justify-between gap-2">
+                <div class="sm:col-span-4 xl:col-span-3 bg-[#07101B] border-b sm:border-b-0 sm:border-r border-border p-3 flex sm:flex-col justify-between gap-2">
                   <div class="flex sm:flex-col gap-1.5 overflow-x-auto" role="tablist" aria-label="Launcher preview" data-i18n-attr="aria-label:launcher.tabs">
                     <button type="button" role="tab" id="vg-tab-0" class="vg-tab" aria-selected="true" aria-controls="vg-stage" data-i18n="launcher.tab0">▶ Play Opengea</button>
                     <button type="button" role="tab" id="vg-tab-1" class="vg-tab" aria-selected="false" aria-controls="vg-stage" tabindex="-1" data-i18n="launcher.tab1">🎉 Seasonal events</button>
@@ -174,7 +174,7 @@
                 </div>
 
                 <!-- Main stage -->
-                <div class="sm:col-span-9 p-5 flex flex-col justify-between bg-panel">
+                <div class="sm:col-span-8 xl:col-span-9 p-5 flex flex-col justify-between bg-panel">
                   <div id="vg-stage" role="tabpanel" aria-labelledby="vg-tab-0" class="h-52 sm:h-60 rounded-xl overflow-hidden border border-border relative mb-4 bg-[#060E18]">
                     <img id="vg-img" src="assets/img/heroes-800.webp" srcset="assets/img/heroes-800.webp 800w, assets/img/heroes-1600.webp 1600w" sizes="(min-width: 1024px) 560px, 100vw" alt="" class="absolute inset-0 w-full h-full object-cover animate-ken-burns" />
                     <div class="absolute inset-0 bg-gradient-to-t from-bg/90 via-bg/20 to-transparent"></div>
