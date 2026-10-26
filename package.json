@@ -1,0 +1,18 @@
+{
+  "name": "opengea-site",
+  "version": "1.0.0",
+  "description": "Opengea website (GitHub Pages)",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/build.mjs && python -m http.server 8080 -d dist",
+    "deploy": "node scripts/build.mjs && node scripts/deploy.mjs"
+  },
+  "type": "module",
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20.11"
+  }
+}
