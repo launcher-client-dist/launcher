@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.1, client v0.0.14), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.1, client v0.0.15), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.1',
     launcherBytes: 66397722,
     launcherSha: '7c256aa2ae8b66d8c2b3e5ae461e02c710accebef7afee24cf96cadeed724588',
-    clientVersion: '0.0.14',
-    clientBytes: 488378839,
-    clientInstalledBytes: 756767672
+    clientVersion: '0.0.15',
+    clientBytes: 488339342,
+    clientInstalledBytes: 756696686
   };
 
   /* ------------------------------------------------------------------ */
@@ -70,11 +70,11 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.14',
+      'patch.title': 'Latest in v0.0.15',
       'patch.all': 'Full changelog →',
-      'patch.1': 'Client and server improvements',
+      'patch.1': 'Client stability and security',
       'patch.2': 'General fixes and polish',
-      'patch.3': 'Better stability and performance',
+      'patch.3': 'Server improvements',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -107,8 +107,8 @@
       'news.team': 'Opengea Team',
       'news.read': 'Read the release notes',
       'news.readLauncher': 'See launcher releases',
-      'news.1.title': 'Client v0.0.14 is out',
-      'news.1.text': 'Stability and performance improvements to both the client and the server.',
+      'news.1.title': 'Client v0.0.15 is out',
+      'news.1.text': 'Stability and security improvements to the client, plus general fixes and polish.',
       'news.2.title': 'Launcher v0.3.1 installs itself',
       'news.2.text': 'Run it from anywhere: it installs for your user, adds a Start menu entry and updates itself before the game.',
       'news.3.title': 'An active community',
@@ -233,11 +233,11 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.14',
+      'patch.title': 'Novidades da v0.0.15',
       'patch.all': 'Changelog completo →',
-      'patch.1': 'Melhorias no cliente e no servidor',
+      'patch.1': 'Estabilidade e segurança do cliente',
       'patch.2': 'Correções gerais e ajustes',
-      'patch.3': 'Mais estabilidade e desempenho',
+      'patch.3': 'Melhorias no servidor',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
@@ -270,8 +270,8 @@
       'news.team': 'Equipe Opengea',
       'news.read': 'Ler as notas da versão',
       'news.readLauncher': 'Ver versões do launcher',
-      'news.1.title': 'Cliente v0.0.14 disponível',
-      'news.1.text': 'Melhorias de estabilidade e desempenho no cliente e no servidor.',
+      'news.1.title': 'Cliente v0.0.15 disponível',
+      'news.1.text': 'Melhorias de estabilidade e segurança no cliente, além de correções gerais e ajustes.',
       'news.2.title': 'Launcher v0.3.1 se instala sozinho',
       'news.2.text': 'Abra de qualquer lugar: ele se instala para o seu usuário, cria um atalho no menu Iniciar e se atualiza antes do jogo.',
       'news.3.title': 'Comunidade ativa',
