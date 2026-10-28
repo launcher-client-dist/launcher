@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.2, client v0.0.16), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.3, client v0.0.17), refreshed from GitHub on load.
   const release = {
-    launcherVersion: '0.3.2',
-    launcherBytes: 66401728,
-    launcherSha: '24b149e3fa0340a055447b691ad9e31765a1d64be406b0728d6bc1c280ec02d5',
-    clientVersion: '0.0.16',
-    clientBytes: 488388078,
-    clientInstalledBytes: 756784750
+    launcherVersion: '0.3.3',
+    launcherBytes: 66403800,
+    launcherSha: '8f7082665c3d01ca5b7b83bf09196f4de785cac18d4cf903e6ea7134ee247984',
+    clientVersion: '0.0.17',
+    clientBytes: 488873239,
+    clientInstalledBytes: 758975348
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,11 +71,11 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.16',
+      'patch.title': 'Latest in v0.0.17',
       'patch.all': 'Full changelog →',
-      'patch.1': 'Privacy and security',
-      'patch.2': 'General fixes and polish',
-      'patch.3': 'The Market: trade with every player',
+      'patch.1': 'Play in Portuguese (Brazil)',
+      'patch.2': 'Language picker in the launcher',
+      'patch.3': 'General fixes and polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -112,10 +112,10 @@
       'news.team': 'Opengea Team',
       'news.read': 'Read the release notes',
       'news.readLauncher': 'See launcher releases',
-      'news.1.title': 'Client v0.0.16 is out',
-      'news.1.text': 'Privacy, security and stability improvements, plus the new Market.',
-      'news.2.title': 'Launcher v0.3.1 installs itself',
-      'news.2.text': 'Run it from anywhere: it installs for your user, adds a Start menu entry and updates itself before the game.',
+      'news.1.title': 'Opengea now speaks Portuguese',
+      'news.1.text': 'Client v0.0.17 can be played in Portuguese (Brazil): menus, items, characters, quests and more.',
+      'news.2.title': 'Launcher v0.3.3: pick your language',
+      'news.2.text': 'A new language button at the top of the launcher switches the launcher and the game. It updates itself the next time it opens.',
       'news.3.title': 'An active community',
       'news.3.text': 'Call your friends to take on quests and slay bosses together.',
       'news.readCommunity': 'See the screenshots',
@@ -254,11 +254,11 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.16',
+      'patch.title': 'Novidades da v0.0.17',
       'patch.all': 'Changelog completo →',
-      'patch.1': 'Privacidade e segurança',
-      'patch.2': 'Correções gerais e ajustes',
-      'patch.3': 'O Market: negocie com todos os jogadores',
+      'patch.1': 'Jogue em português (Brasil)',
+      'patch.2': 'Seletor de idioma no launcher',
+      'patch.3': 'Correções gerais e ajustes',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
@@ -295,10 +295,10 @@
       'news.team': 'Equipe Opengea',
       'news.read': 'Ler as notas da versão',
       'news.readLauncher': 'Ver versões do launcher',
-      'news.1.title': 'Cliente v0.0.16 disponível',
-      'news.1.text': 'Melhorias de privacidade, segurança e estabilidade, e o novo Market.',
-      'news.2.title': 'Launcher v0.3.1 se instala sozinho',
-      'news.2.text': 'Abra de qualquer lugar: ele se instala para o seu usuário, cria um atalho no menu Iniciar e se atualiza antes do jogo.',
+      'news.1.title': 'Opengea agora fala português',
+      'news.1.text': 'O cliente v0.0.17 pode ser jogado em português (Brasil): menus, itens, personagens, quests e mais.',
+      'news.2.title': 'Launcher v0.3.3: escolha seu idioma',
+      'news.2.text': 'Um novo botão de idioma no topo do launcher troca o idioma do launcher e do jogo. Ele se atualiza sozinho da próxima vez que abrir.',
       'news.3.title': 'Comunidade ativa',
       'news.3.text': 'Chame seus amigos para fazer quests e matar bosses juntos.',
       'news.readCommunity': 'Ver as capturas',
