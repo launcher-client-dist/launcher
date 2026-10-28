@@ -40,6 +40,7 @@
 
         <nav id="desktop-nav" class="hidden xl:flex items-center gap-1" aria-label="Primary" data-i18n-attr="aria-label:nav.label">
           <a href="#top" class="nav-link" data-spy="top" aria-current="true" data-i18n="nav.home">Home</a>
+          <a href="#market" class="nav-link" data-spy="market" data-i18n="nav.market">Market</a>
           <a href="#news" class="nav-link" data-spy="news" data-i18n="nav.news">News</a>
           <a href="#media" class="nav-link" data-spy="media" data-i18n="nav.media">Media</a>
           <a href="#how-to-play" class="nav-link" data-spy="how-to-play" data-i18n="nav.how">How to play</a>
@@ -51,7 +52,7 @@
           <a href="https://github.com/launcher-client-dist/dist/releases/latest" target="_blank" rel="noopener" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-panel border border-border text-xs font-medium hover:border-gold/50 transition-colors" title="Latest client release" data-i18n-attr="title:pill.title">
             <span class="w-2.5 h-2.5 rounded-full bg-success shrink-0" aria-hidden="true"></span>
             <span class="text-txt-primary font-semibold" data-i18n="pill.client">Client</span>
-            <span class="text-txt-muted font-mono">v<span data-rel="clientVersion">0.0.15</span></span>
+            <span class="text-txt-muted font-mono">v<span data-rel="clientVersion">0.0.16</span></span>
           </a>
 
           <button type="button" id="lang-toggle" class="px-2.5 py-2 rounded-lg bg-panel border border-border text-xs font-mono font-semibold text-txt-secondary hover:text-txt-primary hover:border-gold/50 transition-colors" aria-label="Mudar para português" data-i18n-attr="aria-label:lang.switch" data-i18n="lang.code">PT</button>
@@ -81,16 +82,17 @@
 
         <div class="mt-5 p-3 rounded-lg bg-panel border border-border flex items-center justify-between">
           <span class="text-xs text-txt-secondary" data-i18n="pill.title">Latest client release</span>
-          <span class="flex items-center gap-1.5 text-xs font-medium"><span class="w-2.5 h-2.5 rounded-full bg-success" aria-hidden="true"></span><span class="font-mono text-txt-primary">v<span data-rel="clientVersion">0.0.15</span></span></span>
+          <span class="flex items-center gap-1.5 text-xs font-medium"><span class="w-2.5 h-2.5 rounded-full bg-success" aria-hidden="true"></span><span class="font-mono text-txt-primary">v<span data-rel="clientVersion">0.0.16</span></span></span>
         </div>
 
         <nav class="mt-6 flex flex-col gap-1.5" aria-label="Menu" data-i18n-attr="aria-label:menu.label">
           <a href="#top" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.home">Home</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
+          <a href="#market" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.market">Market</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
           <a href="#news" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.news">News</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
           <a href="#media" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.media">Media</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
           <a href="#how-to-play" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.how">How to play</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
           <a href="#requirements" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.req">Requirements</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
-          <a href="https://github.com/launcher-client-dist/dist/releases" target="_blank" rel="noopener" class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.patches">Patch notes</span><span class="px-2 py-0.5 text-[10px] rounded bg-gold/20 text-gold font-mono">v<span data-rel="clientVersion">0.0.15</span></span></a>
+          <a href="https://github.com/launcher-client-dist/dist/releases" target="_blank" rel="noopener" class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.patches">Patch notes</span><span class="px-2 py-0.5 text-[10px] rounded bg-gold/20 text-gold font-mono">v<span data-rel="clientVersion">0.0.16</span></span></a>
         </nav>
       </div>
 
@@ -114,7 +116,7 @@
           <!-- Left: pitch + download -->
           <div class="lg:col-span-5 min-w-0">
             <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-teal/15 border border-teal/40 text-teal font-mono text-xs mb-4">
-              <span>● <span data-i18n="hero.badge">CLIENT</span> v<span data-rel="clientVersion">0.0.15</span> · <span data-i18n="hero.badge2">100% FREE</span></span>
+              <span>● <span data-i18n="hero.badge">CLIENT</span> v<span data-rel="clientVersion">0.0.16</span> · <span data-i18n="hero.badge2">100% FREE</span></span>
             </div>
             <h1 class="type-h1 text-3xl sm:text-5xl text-txt-primary leading-tight mb-4" data-i18n="hero.title">YOUR ADVENTURE AWAITS IN OPENGEA.</h1>
             <p class="text-sm sm:text-base text-txt-secondary mb-6 leading-relaxed" data-i18n-html="hero.lead">Download the <span data-rel="launcherSize">66 MB</span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.</p>
@@ -126,20 +128,20 @@
             <!-- Latest patch highlights -->
             <div class="rounded-xl bg-panel border border-border p-4 space-y-2.5 text-xs">
               <div class="font-mono uppercase text-gold font-semibold flex items-center justify-between gap-3">
-                <span data-i18n="patch.title">Latest in v0.0.15</span>
+                <span data-i18n="patch.title">Latest in v0.0.16</span>
                 <a href="https://github.com/launcher-client-dist/dist/releases" target="_blank" rel="noopener" class="text-teal hover:underline normal-case shrink-0" data-i18n="patch.all">Full changelog →</a>
               </div>
               <div class="flex items-start gap-2 text-txt-secondary">
                 <span class="tag bg-teal/15 text-teal" data-i18n="tag.improved">IMPROVED</span>
-                <span data-i18n="patch.1">Client stability and security</span>
+                <span data-i18n="patch.1">Privacy and security</span>
               </div>
               <div class="flex items-start gap-2 text-txt-secondary">
                 <span class="tag bg-warning/15 text-warning" data-i18n="tag.fixed">FIXED</span>
                 <span data-i18n="patch.2">General fixes and polish</span>
               </div>
               <div class="flex items-start gap-2 text-txt-secondary">
-                <span class="tag bg-teal/15 text-teal" data-i18n="tag.improved">IMPROVED</span>
-                <span data-i18n="patch.3">Server improvements</span>
+                <span class="tag bg-gold/15 text-gold" data-i18n="tag.new">NEW</span>
+                <span data-i18n="patch.3">The Market: trade with every player</span>
               </div>
             </div>
           </div>
@@ -167,6 +169,7 @@
                     <button type="button" role="tab" id="vg-tab-0" class="vg-tab" aria-selected="true" aria-controls="vg-stage" data-i18n="launcher.tab0">▶ Play Opengea</button>
                     <button type="button" role="tab" id="vg-tab-1" class="vg-tab" aria-selected="false" aria-controls="vg-stage" tabindex="-1" data-i18n="launcher.tab1">⚔️ Bosses</button>
                     <button type="button" role="tab" id="vg-tab-2" class="vg-tab" aria-selected="false" aria-controls="vg-stage" tabindex="-1" data-i18n="launcher.tab2">🧪 Lab of innovation</button>
+                    <button type="button" role="tab" id="vg-tab-3" class="vg-tab" aria-selected="false" aria-controls="vg-stage" tabindex="-1" data-i18n="launcher.tab3">⚖️ Market</button>
                   </div>
                   <div class="hidden sm:block pt-3 border-t border-border text-[10px] font-mono text-txt-muted">
                     <span data-i18n="launcher.verified">SHA-256 verified</span><br/><span data-i18n="launcher.client">Client:</span> <span data-rel="clientInstalled">757 MB</span>
@@ -187,7 +190,7 @@
                   <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4 pt-2 border-t border-border">
                     <div class="flex-1 min-w-0">
                       <div class="flex items-start justify-between gap-3 text-xs font-mono mb-1.5">
-                        <span id="vg-status" class="text-txt-primary font-semibold min-w-0" aria-live="polite">Client 0.0.15 · Ready to play</span>
+                        <span id="vg-status" class="text-txt-primary font-semibold min-w-0" aria-live="polite">Client 0.0.16 · Ready to play</span>
                         <span class="text-success shrink-0" data-i18n="launcher.synced">100% verified</span>
                       </div>
                       <div class="w-full h-2.5 rounded-full bg-bg border border-border overflow-hidden" aria-hidden="true">
@@ -201,6 +204,47 @@
             </div>
           </div>
 
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- MARKET -->
+      <!-- ================================================================= -->
+      <section id="market" class="border-b border-border py-20">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          <div class="lg:col-span-5 min-w-0">
+            <div class="flex items-center gap-3 flex-wrap mb-3">
+              <span class="text-xs font-mono uppercase tracking-[0.2em] text-gold" data-i18n="market.eyebrow">Trade with every player</span>
+              <span class="px-2.5 py-1 rounded-md border text-teal border-teal/40 bg-teal/10 text-[11px] font-semibold uppercase tracking-wider" data-i18n="market.badge">New</span>
+            </div>
+            <h2 class="type-h2 text-3xl sm:text-4xl text-txt-primary mb-4" data-i18n="market.title">The Market</h2>
+            <p class="text-sm sm:text-base text-txt-secondary leading-relaxed mb-8" data-i18n="market.lead">Buy and sell with the whole world without leaving your depot. Post an offer, set your price, and pick up what you bought or earned in your inbox.</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5">
+              <li class="min-w-0">
+                <h3 class="type-h3 text-sm text-gold mb-1" data-i18n="market.f1.title">Trade with everyone</h3>
+                <p class="text-xs text-txt-secondary leading-relaxed" data-i18n="market.f1.text">Sell to and buy from every player, right at the depot. Browse the offers for any item and take the price you like.</p>
+              </li>
+              <li class="min-w-0">
+                <h3 class="type-h3 text-sm text-gold mb-1" data-i18n="market.f2.title">Your offer, your price</h3>
+                <p class="text-xs text-txt-secondary leading-relaxed" data-i18n="market.f2.text">Post sell or buy offers, anonymously if you prefer. A small fee per listing keeps the books clean.</p>
+              </li>
+              <li class="min-w-0">
+                <h3 class="type-h3 text-sm text-gold mb-1" data-i18n="market.f3.title">Every item, every rarity</h3>
+                <p class="text-xs text-txt-secondary leading-relaxed" data-i18n="market.f3.text">Dozens of categories from Common to Legendary, with 30 days of price history for each item.</p>
+              </li>
+              <li class="min-w-0">
+                <h3 class="type-h3 text-sm text-gold mb-1" data-i18n="market.f4.title">Safe from start to finish</h3>
+                <p class="text-xs text-txt-secondary leading-relaxed" data-i18n="market.f4.text">You pay with the gold in your depot and collect in your inbox. A trade goes through whole or not at all.</p>
+              </li>
+            </ul>
+            <p class="mt-8 text-xs font-mono text-txt-muted" data-i18n-html="market.note">In client v<span data-rel="clientVersion">0.0.16</span> : stand at any depot and press Market in the top bar.</p>
+          </div>
+          <figure class="lg:col-span-7 min-w-0">
+            <a href="assets/img/shot-market-full.webp" target="_blank" rel="noopener" class="block rounded-xl overflow-hidden border border-border shadow-card hover:border-gold/50 transition-colors">
+              <img src="assets/img/shot-market-800.webp" srcset="assets/img/shot-market-800.webp 800w, assets/img/shot-market-full.webp 1054w" sizes="(min-width: 1024px) 700px, 100vw" width="1054" height="852" loading="lazy" alt="The Market window: sell and buy offers for the Broadsword, the item categories and the new offer form." data-i18n-attr="alt:market.alt" class="w-full h-auto block" />
+            </a>
+            <figcaption class="mt-3 text-xs text-txt-muted" data-i18n="market.caption">In game: the Broadsword's book, with four sellers and three buyers.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -227,13 +271,13 @@
                   <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md border text-gold border-gold/40 bg-gold/10 text-[11px] font-semibold uppercase tracking-wider backdrop-blur-sm" data-i18n="cat.update">Update</span>
                 </div>
                 <div class="p-5 sm:p-6">
-                  <div class="text-xs font-mono text-txt-muted mb-2"><time datetime="2026-10-26">Oct 26, 2026</time> · <span data-i18n="news.client">Game client</span></div>
-                  <h3 class="type-h3 text-lg text-txt-primary mb-2 group-hover:text-gold transition-colors" data-i18n="news.1.title">Client v0.0.15 is out</h3>
-                  <p class="text-sm text-txt-secondary" data-i18n="news.1.text">Stability and security improvements to the client, plus general fixes and polish.</p>
+                  <div class="text-xs font-mono text-txt-muted mb-2"><time datetime="2026-10-27">Oct 27, 2026</time> · <span data-i18n="news.client">Game client</span></div>
+                  <h3 class="type-h3 text-lg text-txt-primary mb-2 group-hover:text-gold transition-colors" data-i18n="news.1.title">Client v0.0.16 is out</h3>
+                  <p class="text-sm text-txt-secondary" data-i18n="news.1.text">Privacy, security and stability improvements, plus the new Market.</p>
                 </div>
               </div>
               <div class="px-5 sm:px-6 pb-5 pt-2 flex items-center justify-between text-xs font-semibold text-teal">
-                <a href="https://github.com/launcher-client-dist/dist/releases/tag/v0.0.15" target="_blank" rel="noopener" class="after:absolute after:inset-0" data-i18n="news.read">Read the release notes</a><span aria-hidden="true">→</span>
+                <a href="https://github.com/launcher-client-dist/dist/releases/tag/v0.0.16" target="_blank" rel="noopener" class="after:absolute after:inset-0" data-i18n="news.read">Read the release notes</a><span aria-hidden="true">→</span>
               </div>
             </article>
 
@@ -328,7 +372,7 @@
                 <span class="type-h1 text-3xl text-border select-none" aria-hidden="true">02</span>
               </div>
               <h3 class="type-h3 text-lg text-txt-primary mb-2" data-i18n="how.2.title">2. Open it and install</h3>
-              <p class="text-sm text-txt-secondary" data-i18n-html="how.2.text">It installs itself for your user (no admin), then downloads client v<span data-rel="clientVersion">0.0.15</span> (<span data-rel="clientSize">488 MB</span>) and checks it against its SHA-256.</p>
+              <p class="text-sm text-txt-secondary" data-i18n-html="how.2.text">It installs itself for your user (no admin), then downloads client v<span data-rel="clientVersion">0.0.16</span> (<span data-rel="clientSize">488 MB</span>) and checks it against its SHA-256.</p>
             </li>
             <li class="rounded-xl bg-panel border border-border p-6 sm:p-8 relative">
               <div class="flex items-center justify-between mb-6">
@@ -383,7 +427,7 @@
           <div class="rounded-xl bg-panel border border-gold/40 p-6 sm:p-8 relative shadow-card">
             <div class="flex items-center justify-between gap-3 pb-4 mb-6 border-b border-border">
               <h3 class="type-h3 text-lg text-gold" data-i18n="req.client">Game client</h3>
-              <span class="px-2.5 py-1 rounded bg-gold/15 border border-gold/40 text-xs font-mono text-gold">v<span data-rel="clientVersion">0.0.15</span></span>
+              <span class="px-2.5 py-1 rounded bg-gold/15 border border-gold/40 text-xs font-mono text-gold">v<span data-rel="clientVersion">0.0.16</span></span>
             </div>
             <dl class="space-y-4 text-sm">
               <div class="flex justify-between gap-4"><dt class="text-txt-secondary" data-i18n="req.base">Game client</dt><dd class="text-txt-primary font-medium text-right" data-i18n="req.baseValue">Opengea 3.2.6</dd></div>
@@ -406,7 +450,7 @@
           <div class="relative z-10 max-w-[640px]">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-success/15 border border-success/40 text-success text-xs font-medium mb-4">
               <span class="w-2 h-2 rounded-full bg-success animate-pulse" aria-hidden="true"></span>
-              <span data-i18n-html="community.badge">Launcher v<span data-rel="launcherVersion">0.3.1</span> · Client v<span data-rel="clientVersion">0.0.15</span></span>
+              <span data-i18n-html="community.badge">Launcher v<span data-rel="launcherVersion">0.3.1</span> · Client v<span data-rel="clientVersion">0.0.16</span></span>
             </div>
             <h2 class="type-h2 text-2xl sm:text-4xl text-txt-primary mb-3" data-i18n="community.title">Follow every release on GitHub</h2>
             <p class="text-txt-secondary text-sm sm:text-base mb-8" data-i18n="community.text">Every launcher and client build is published openly on GitHub with its notes. The launcher picks up new versions by itself; this is where you can read what changed.</p>

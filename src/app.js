@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.1, client v0.0.15), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.1, client v0.0.16), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.1',
     launcherBytes: 66397722,
     launcherSha: '7c256aa2ae8b66d8c2b3e5ae461e02c710accebef7afee24cf96cadeed724588',
-    clientVersion: '0.0.15',
-    clientBytes: 488339342,
-    clientInstalledBytes: 756696686
+    clientVersion: '0.0.16',
+    clientBytes: 488388078,
+    clientInstalledBytes: 756784750
   };
 
   /* ------------------------------------------------------------------ */
@@ -28,6 +28,7 @@
       'brand.tagline': 'Launcher &amp;<br/>game client',
       'nav.label': 'Primary',
       'nav.home': 'Home',
+      'nav.market': 'Market',
       'nav.news': 'News',
       'nav.media': 'Media',
       'nav.how': 'How to play',
@@ -70,11 +71,11 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.15',
+      'patch.title': 'Latest in v0.0.16',
       'patch.all': 'Full changelog →',
-      'patch.1': 'Client stability and security',
+      'patch.1': 'Privacy and security',
       'patch.2': 'General fixes and polish',
-      'patch.3': 'Server improvements',
+      'patch.3': 'The Market: trade with every player',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -84,6 +85,7 @@
       'launcher.tab0': '▶ Play Opengea',
       'launcher.tab1': '⚔️ Bosses',
       'launcher.tab2': '🧪 Lab of innovation',
+      'launcher.tab3': '⚖️ Market',
       'launcher.verified': 'SHA-256 verified',
       'launcher.client': 'Client:',
       'launcher.synced': '100% verified',
@@ -97,6 +99,9 @@
       'launcher.s2.title': 'Lab of innovation',
       'launcher.s2.sub': 'We test your ideas, even a motorcycle in a medieval world. Your feedback is essential.',
       'launcher.s2.status': 'Client {client} · New features in testing',
+      'launcher.s3.title': 'The Market is open',
+      'launcher.s3.sub': 'Buy and sell with every player, right at your depot.',
+      'launcher.s3.status': 'Client {client} · Trade at any depot',
       'cat.update': 'Update',
       'cat.community': 'Community',
       'news.eyebrow': 'Dispatches from Opengea',
@@ -107,13 +112,28 @@
       'news.team': 'Opengea Team',
       'news.read': 'Read the release notes',
       'news.readLauncher': 'See launcher releases',
-      'news.1.title': 'Client v0.0.15 is out',
-      'news.1.text': 'Stability and security improvements to the client, plus general fixes and polish.',
+      'news.1.title': 'Client v0.0.16 is out',
+      'news.1.text': 'Privacy, security and stability improvements, plus the new Market.',
       'news.2.title': 'Launcher v0.3.1 installs itself',
       'news.2.text': 'Run it from anywhere: it installs for your user, adds a Start menu entry and updates itself before the game.',
       'news.3.title': 'An active community',
       'news.3.text': 'Call your friends to take on quests and slay bosses together.',
       'news.readCommunity': 'See the screenshots',
+      'market.eyebrow': 'Trade with every player',
+      'market.badge': 'New',
+      'market.title': 'The Market',
+      'market.lead': 'Buy and sell with the whole world without leaving your depot. Post an offer, set your price, and pick up what you bought or earned in your inbox.',
+      'market.f1.title': 'Trade with everyone',
+      'market.f1.text': 'Sell to and buy from every player, right at the depot. Browse the offers for any item and take the price you like.',
+      'market.f2.title': 'Your offer, your price',
+      'market.f2.text': 'Post sell or buy offers, anonymously if you prefer. A small fee per listing keeps the books clean.',
+      'market.f3.title': 'Every item, every rarity',
+      'market.f3.text': 'Dozens of categories from Common to Legendary, with 30 days of price history for each item.',
+      'market.f4.title': 'Safe from start to finish',
+      'market.f4.text': 'You pay with the gold in your depot and collect in your inbox. A trade goes through whole or not at all.',
+      'market.note': 'In client v<span data-rel="clientVersion"></span>: stand at any depot and press Market in the top bar.',
+      'market.alt': 'The Market window: sell and buy offers for the Broadsword, the item categories and the new offer form.',
+      'market.caption': "In game: the Broadsword's book, with four sellers and three buyers.",
       'media.eyebrow': 'Community & lab',
       'media.title': 'Media',
       'media.hint': 'Click any image to view it full size',
@@ -191,6 +211,7 @@
       'brand.tagline': 'Launcher e<br/>cliente do jogo',
       'nav.label': 'Principal',
       'nav.home': 'Início',
+      'nav.market': 'Market',
       'nav.news': 'Notícias',
       'nav.media': 'Mídia',
       'nav.how': 'Como jogar',
@@ -233,11 +254,11 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.15',
+      'patch.title': 'Novidades da v0.0.16',
       'patch.all': 'Changelog completo →',
-      'patch.1': 'Estabilidade e segurança do cliente',
+      'patch.1': 'Privacidade e segurança',
       'patch.2': 'Correções gerais e ajustes',
-      'patch.3': 'Melhorias no servidor',
+      'patch.3': 'O Market: negocie com todos os jogadores',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
@@ -247,6 +268,7 @@
       'launcher.tab0': '▶ Jogar Opengea',
       'launcher.tab1': '⚔️ Bosses',
       'launcher.tab2': '🧪 Laboratório de inovação',
+      'launcher.tab3': '⚖️ Market',
       'launcher.verified': 'SHA-256 verificado',
       'launcher.client': 'Cliente:',
       'launcher.synced': '100% verificado',
@@ -260,6 +282,9 @@
       'launcher.s2.title': 'Laboratório de inovação',
       'launcher.s2.sub': 'Testamos suas ideias, até uma moto num mundo medieval. Seu feedback é essencial.',
       'launcher.s2.status': 'Cliente {client} · Novidades em teste',
+      'launcher.s3.title': 'O Market está aberto',
+      'launcher.s3.sub': 'Compre e venda com todos os jogadores, direto no seu depot.',
+      'launcher.s3.status': 'Cliente {client} · Negocie em qualquer depot',
       'cat.update': 'Atualização',
       'cat.community': 'Comunidade',
       'news.eyebrow': 'Direto de Opengea',
@@ -270,13 +295,28 @@
       'news.team': 'Equipe Opengea',
       'news.read': 'Ler as notas da versão',
       'news.readLauncher': 'Ver versões do launcher',
-      'news.1.title': 'Cliente v0.0.15 disponível',
-      'news.1.text': 'Melhorias de estabilidade e segurança no cliente, além de correções gerais e ajustes.',
+      'news.1.title': 'Cliente v0.0.16 disponível',
+      'news.1.text': 'Melhorias de privacidade, segurança e estabilidade, e o novo Market.',
       'news.2.title': 'Launcher v0.3.1 se instala sozinho',
       'news.2.text': 'Abra de qualquer lugar: ele se instala para o seu usuário, cria um atalho no menu Iniciar e se atualiza antes do jogo.',
       'news.3.title': 'Comunidade ativa',
       'news.3.text': 'Chame seus amigos para fazer quests e matar bosses juntos.',
       'news.readCommunity': 'Ver as capturas',
+      'market.eyebrow': 'Negocie com todos os jogadores',
+      'market.badge': 'Novo',
+      'market.title': 'O Market',
+      'market.lead': 'Compre e venda com o mundo inteiro sem sair do depot. Crie uma oferta, defina o seu preço e retire no inbox o que comprou ou ganhou.',
+      'market.f1.title': 'Negocie com todo mundo',
+      'market.f1.text': 'Venda e compre de todos os jogadores, direto no depot. Veja as ofertas de qualquer item e escolha o preço que quiser.',
+      'market.f2.title': 'Sua oferta, seu preço',
+      'market.f2.text': 'Crie ofertas de venda ou de compra, anônimas se preferir. Uma pequena taxa por oferta mantém o livro limpo.',
+      'market.f3.title': 'Todo item, toda raridade',
+      'market.f3.text': 'Dezenas de categorias, do Comum ao Lendário, com 30 dias de histórico de preços de cada item.',
+      'market.f4.title': 'Seguro do início ao fim',
+      'market.f4.text': 'Você paga com o gold do depot e retira no inbox. Um negócio acontece inteiro ou não acontece.',
+      'market.note': 'No cliente v<span data-rel="clientVersion"></span>: fique em qualquer depot e aperte Market na barra de cima.',
+      'market.alt': 'A janela do Market: ofertas de venda e de compra da Broadsword, as categorias de itens e o formulário de nova oferta.',
+      'market.caption': 'No jogo: o livro da Broadsword, com quatro vendedores e três compradores.',
       'media.eyebrow': 'Comunidade e laboratório',
       'media.title': 'Mídia',
       'media.hint': 'Clique em uma imagem para ver em tamanho real',
@@ -361,11 +401,13 @@
     { key: 'horse', img: 'shot-horse', w: 'full', cat: 'lab' }
   ];
 
-  // The same slides as the launcher's Home carousel (opengea-launcher/content/carousel); w = width of the -full file.
+  // The launcher's Home carousel (opengea-launcher/content/carousel), plus the Market; w = width of the -full file,
+  // pos = where the stage crops it (object-position; default centre).
   const LAUNCHER_SLIDES = [
     { img: 'shot-gathering', w: 1057 },
     { img: 'shot-boss', w: 1536 },
-    { img: 'shot-motorcycle', w: 1110 }
+    { img: 'shot-motorcycle', w: 1110 },
+    { img: 'shot-market', w: 1054, pos: 'center 20%' }
   ];
 
   /* ------------------------------------------------------------------ */
@@ -485,12 +527,13 @@
       btn.tabIndex = i === idx ? 0 : -1;
       if (i === idx && focus) btn.focus();
     });
-    const { img: name, w } = LAUNCHER_SLIDES[idx];
+    const { img: name, w, pos } = LAUNCHER_SLIDES[idx];
     const img = $('#vg-img');
     if (!img.src.includes(`${name}-800`)) {
       const fresh = img.cloneNode();
       fresh.src = `assets/img/${name}-800.webp`;
       fresh.srcset = `assets/img/${name}-800.webp 800w, assets/img/${name}-full.webp ${w}w`;
+      fresh.style.objectPosition = pos || '';
       img.replaceWith(fresh); // restarts the Ken Burns animation
     }
     $('#vg-stage').setAttribute('aria-labelledby', `vg-tab-${idx}`);
