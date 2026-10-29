@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.3, client v0.0.18), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.3, client v0.0.19), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.3',
     launcherBytes: 66403800,
     launcherSha: '8f7082665c3d01ca5b7b83bf09196f4de785cac18d4cf903e6ea7134ee247984',
-    clientVersion: '0.0.18',
-    clientBytes: 488873090,
-    clientInstalledBytes: 758975187
+    clientVersion: '0.0.19',
+    clientBytes: 488992178,
+    clientInstalledBytes: 761277575
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.18',
+      'patch.title': 'Latest in v0.0.19',
       'patch.all': 'Full changelog →',
-      'patch.1': 'No more freeze when switching characters',
-      'patch.2': 'Privacy and security',
+      'patch.1': 'Item pictures in the Market',
+      'patch.2': 'Client connectivity and stability',
       'patch.3': 'General fixes and polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
@@ -112,8 +112,8 @@
       'news.team': 'Opengea Team',
       'news.read': 'Read the release notes',
       'news.readLauncher': 'See launcher releases',
-      'news.1.title': 'Switch characters without restarting',
-      'news.1.text': 'Client v0.0.18 fixes the freeze when you log out and pick another character on the same account.',
+      'news.1.title': 'Connection improvements',
+      'news.1.text': 'Client v0.0.18 brings general adjustments to connectivity and stability.',
       'news.2.title': 'Launcher v0.3.3: pick your language',
       'news.2.text': 'A new language button at the top of the launcher switches the launcher and the game. It updates itself the next time it opens.',
       'news.3.title': 'An active community',
@@ -254,10 +254,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.18',
+      'patch.title': 'Novidades da v0.0.19',
       'patch.all': 'Changelog completo →',
-      'patch.1': 'Sem travamento ao trocar de personagem',
-      'patch.2': 'Privacidade e segurança',
+      'patch.1': 'Imagens dos itens no Market',
+      'patch.2': 'Conectividade e estabilidade do cliente',
       'patch.3': 'Correções gerais e ajustes',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
@@ -295,8 +295,8 @@
       'news.team': 'Equipe Opengea',
       'news.read': 'Ler as notas da versão',
       'news.readLauncher': 'Ver versões do launcher',
-      'news.1.title': 'Troque de personagem sem reiniciar',
-      'news.1.text': 'O cliente v0.0.18 corrige o travamento ao sair e escolher outro personagem na mesma conta.',
+      'news.1.title': 'Melhorias de conexão',
+      'news.1.text': 'O cliente v0.0.18 traz ajustes gerais na conectividade e na estabilidade do cliente.',
       'news.2.title': 'Launcher v0.3.3: escolha seu idioma',
       'news.2.text': 'Um novo botão de idioma no topo do launcher troca o idioma do launcher e do jogo. Ele se atualiza sozinho da próxima vez que abrir.',
       'news.3.title': 'Comunidade ativa',
