@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.3, client v0.0.19), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.3, client v0.0.20), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.3',
     launcherBytes: 66403800,
     launcherSha: '8f7082665c3d01ca5b7b83bf09196f4de785cac18d4cf903e6ea7134ee247984',
-    clientVersion: '0.0.19',
-    clientBytes: 488992178,
-    clientInstalledBytes: 761277575
+    clientVersion: '0.0.20',
+    clientBytes: 661944733,
+    clientInstalledBytes: 1127212816
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.19',
+      'patch.title': 'Latest in v0.0.20',
       'patch.all': 'Full changelog →',
-      'patch.1': 'Item pictures in the Market',
-      'patch.2': 'Client connectivity and stability',
+      'patch.1': 'A brand-new Market',
+      'patch.2': 'Item information and interface polish',
       'patch.3': 'General fixes and polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
@@ -112,8 +112,8 @@
       'news.team': 'Opengea Team',
       'news.read': 'Read the release notes',
       'news.readLauncher': 'See launcher releases',
-      'news.1.title': 'Connection improvements',
-      'news.1.text': 'Client v0.0.18 brings general adjustments to connectivity and stability.',
+      'news.1.title': 'The new Market is here',
+      'news.1.text': 'Client v0.0.20 brings a brand-new Market: browse every item, buy from other players, place buy orders and sell your own, right from your depot.',
       'news.2.title': 'Launcher v0.3.3: pick your language',
       'news.2.text': 'A new language button at the top of the launcher switches the launcher and the game. It updates itself the next time it opens.',
       'news.3.title': 'An active community',
@@ -132,8 +132,8 @@
       'market.f4.title': 'Safe from start to finish',
       'market.f4.text': 'You pay with the gold in your depot and collect in your inbox. A trade goes through whole or not at all.',
       'market.note': 'In client v<span data-rel="clientVersion"></span>: stand at any depot and press Market in the top bar.',
-      'market.alt': 'The Market window: sell and buy offers for the Broadsword, the item categories and the new offer form.',
-      'market.caption': "In game: the Broadsword's book, with four sellers and three buyers.",
+      'market.alt': 'The Market window: the item list by category, the Broadsword with its offers and the buy panel.',
+      'market.caption': 'In game: the Broadsword in Browse, with three offers and the buy panel.',
       'media.eyebrow': 'Community & lab',
       'media.title': 'Media',
       'media.hint': 'Click any image to view it full size',
@@ -254,10 +254,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.19',
+      'patch.title': 'Novidades da v0.0.20',
       'patch.all': 'Changelog completo →',
-      'patch.1': 'Imagens dos itens no Market',
-      'patch.2': 'Conectividade e estabilidade do cliente',
+      'patch.1': 'Um Market totalmente novo',
+      'patch.2': 'Informações dos itens e ajustes na interface',
       'patch.3': 'Correções gerais e ajustes',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
@@ -295,8 +295,8 @@
       'news.team': 'Equipe Opengea',
       'news.read': 'Ler as notas da versão',
       'news.readLauncher': 'Ver versões do launcher',
-      'news.1.title': 'Melhorias de conexão',
-      'news.1.text': 'O cliente v0.0.18 traz ajustes gerais na conectividade e na estabilidade do cliente.',
+      'news.1.title': 'O novo Market chegou',
+      'news.1.text': 'O cliente v0.0.20 traz um Market totalmente novo: veja todos os itens, compre de outros jogadores, crie ordens de compra e venda os seus, direto do depot.',
       'news.2.title': 'Launcher v0.3.3: escolha seu idioma',
       'news.2.text': 'Um novo botão de idioma no topo do launcher troca o idioma do launcher e do jogo. Ele se atualiza sozinho da próxima vez que abrir.',
       'news.3.title': 'Comunidade ativa',
@@ -315,8 +315,8 @@
       'market.f4.title': 'Seguro do início ao fim',
       'market.f4.text': 'Você paga com o gold do depot e retira no inbox. Um negócio acontece inteiro ou não acontece.',
       'market.note': 'No cliente v<span data-rel="clientVersion"></span>: fique em qualquer depot e aperte Market na barra de cima.',
-      'market.alt': 'A janela do Market: ofertas de venda e de compra da Broadsword, as categorias de itens e o formulário de nova oferta.',
-      'market.caption': 'No jogo: o livro da Broadsword, com quatro vendedores e três compradores.',
+      'market.alt': 'A janela do Market: a lista de itens por categoria, a Broadsword com suas ofertas e o painel de compra.',
+      'market.caption': 'No jogo: a Broadsword na aba Browse, com três ofertas e o painel de compra.',
       'media.eyebrow': 'Comunidade e laboratório',
       'media.title': 'Mídia',
       'media.hint': 'Clique em uma imagem para ver em tamanho real',
