@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.4, client v0.0.20), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.4, client v0.0.21), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.4',
     launcherBytes: 66403879,
     launcherSha: '8d142af4f614b4a2b4b349da7fc0ae481d36c3bb48b635acef5411d82551537b',
-    clientVersion: '0.0.20',
-    clientBytes: 661944733,
-    clientInstalledBytes: 1127212816
+    clientVersion: '0.0.21',
+    clientBytes: 661946600,
+    clientInstalledBytes: 1127217779
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.20',
+      'patch.title': 'Latest in v0.0.21',
       'patch.all': 'Full changelog →',
-      'patch.1': 'A brand-new Market',
-      'patch.2': 'Item information and interface polish',
+      'patch.1': 'Better recovery after a server restart',
+      'patch.2': 'Client stability and resilience',
       'patch.3': 'General fixes and polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
@@ -254,10 +254,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.20',
+      'patch.title': 'Novidades da v0.0.21',
       'patch.all': 'Changelog completo →',
-      'patch.1': 'Um Market totalmente novo',
-      'patch.2': 'Informações dos itens e ajustes na interface',
+      'patch.1': 'Recuperação melhor após reinício do servidor',
+      'patch.2': 'Estabilidade e resiliência do cliente',
       'patch.3': 'Correções gerais e ajustes',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
