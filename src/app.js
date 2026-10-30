@@ -8,11 +8,11 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.4, client v0.0.21), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.5, client v0.0.21), refreshed from GitHub on load.
   const release = {
-    launcherVersion: '0.3.4',
-    launcherBytes: 66403879,
-    launcherSha: '8d142af4f614b4a2b4b349da7fc0ae481d36c3bb48b635acef5411d82551537b',
+    launcherVersion: '0.3.5',
+    launcherBytes: 66404117,
+    launcherSha: '63428b684ba266c2acb674860cf6b341262f7b703d2b452d0715c1a4f3b106da',
     clientVersion: '0.0.21',
     clientBytes: 661946600,
     clientInstalledBytes: 1127217779
