@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.5, client v0.0.22), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.5, client v0.0.23), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.5',
     launcherBytes: 66404117,
     launcherSha: '63428b684ba266c2acb674860cf6b341262f7b703d2b452d0715c1a4f3b106da',
-    clientVersion: '0.0.22',
-    clientBytes: 661946857,
-    clientInstalledBytes: 1127217891
+    clientVersion: '0.0.23',
+    clientBytes: 661947429,
+    clientInstalledBytes: 1127219679
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,7 +71,7 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.22',
+      'patch.title': 'Latest in v0.0.23',
       'patch.all': 'Full changelog →',
       'patch.1': 'General client adjustments',
       'patch.2': 'Client stability',
@@ -254,7 +254,7 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.22',
+      'patch.title': 'Novidades da v0.0.23',
       'patch.all': 'Changelog completo →',
       'patch.1': 'Ajustes gerais no cliente',
       'patch.2': 'Estabilidade do cliente',
