@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal — Opengea</title>
+  <meta name="description" content="Opengea legal notice, rules, terms of use and privacy policy. A non-profit community project, 100% free, with no donations." />
+  <meta name="theme-color" content="#08131F" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://play.apogea.dpdns.org/legal.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/fonts/cinzel-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=32b4503d86" />
+  <script src="app.js?v=0485c0fa20" defer></script>
+</head>
+<body data-title="legal.metaTitle" class="min-h-screen flex flex-col selection:bg-gold selection:text-bg">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[200] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-gold focus:text-bg focus:font-semibold" data-i18n="skip">Skip to content</a>
+
+  <div class="relative flex-1 flex flex-col w-full max-w-[1440px] mx-auto bg-bg shadow-[0_0_60px_rgba(0,0,0,0.8)]">
+
+    <header class="sticky top-0 z-50 bg-[#08131F]/85 backdrop-blur-md border-b border-border/80">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8 h-20 flex items-center justify-between gap-4">
+        <a href="./" class="flex items-center gap-3 group shrink-0" aria-label="Opengea">
+          <img src="assets/img/logo-280.webp" width="140" height="52" alt="Opengea" class="h-9 sm:h-11 w-auto drop-shadow-[0_0_12px_rgba(210,168,75,0.35)] group-hover:brightness-110 transition" />
+          <span class="hidden xl:block text-[10px] font-mono uppercase tracking-[0.2em] text-txt-secondary leading-tight border-l border-border pl-3" data-i18n-html="brand.tagline">Launcher &amp;<br/>game client</span>
+        </a>
+
+        <nav id="desktop-nav" class="hidden xl:flex items-center gap-1" aria-label="Primary" data-i18n-attr="aria-label:nav.label">
+          <a href="./" class="nav-link" data-i18n="nav.home">Home</a>
+          <a href="./#news" class="nav-link" data-i18n="nav.news">News</a>
+          <a href="./#media" class="nav-link" data-i18n="nav.media">Media</a>
+          <a href="./#how-to-play" class="nav-link" data-i18n="nav.how">How to play</a>
+          <a href="legal.html" class="nav-link" aria-current="true" data-i18n="nav.legal">Legal</a>
+        </nav>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button type="button" id="lang-toggle" class="px-2.5 py-2 rounded-lg bg-panel border border-border text-xs font-mono font-semibold text-txt-secondary hover:text-txt-primary hover:border-gold/50 transition-colors" aria-label="Mudar para português" data-i18n-attr="aria-label:lang.switch" data-i18n="lang.code">PT</button>
+          <a href="./#how-to-play" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-gold hover:bg-gold-hover active:bg-gold-pressed text-bg font-semibold text-sm shadow-gold-glow transition-all duration-150">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+            <span data-i18n="cta.short">Download</span>
+          </a>
+          <button type="button" id="menu-open" class="xl:hidden p-2.5 rounded-lg bg-panel border border-border text-txt-primary hover:border-gold transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer" data-i18n-attr="aria-label:menu.open">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="drawer-backdrop" class="fixed inset-0 z-[60] bg-black/75 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200" aria-hidden="true"></div>
+    <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 z-[70] w-[320px] max-w-[88vw] bg-bg border-l border-border shadow-2xl translate-x-full invisible transition-[transform,visibility] duration-200 flex flex-col justify-between p-6 overflow-y-auto" aria-label="Menu" data-i18n-attr="aria-label:menu.label">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-border">
+          <img src="assets/img/logo-280.webp" width="140" height="52" alt="Opengea" class="h-8 w-auto" />
+          <button type="button" id="menu-close" class="p-2 rounded-lg bg-panel border border-border text-txt-secondary hover:text-txt-primary" aria-label="Close menu" data-i18n-attr="aria-label:menu.close">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <nav class="mt-6 flex flex-col gap-1.5" aria-label="Menu" data-i18n-attr="aria-label:menu.label">
+          <a href="./" class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="nav.home">Home</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
+          <a href="#notice" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="legal.notice">Legal notice</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
+          <a href="#rules" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="legal.rules">Rules</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
+          <a href="#terms" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="legal.terms">Terms of use</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
+          <a href="#privacy" data-close-drawer class="w-full px-4 py-3 rounded-lg font-medium text-txt-primary hover:bg-panel hover:text-gold transition-colors flex items-center justify-between"><span data-i18n="legal.privacy">Privacy</span><span class="text-xs text-txt-muted" aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+      <div class="pt-6 mt-6 border-t border-border">
+        <a href="https://github.com/launcher-client-dist/launcher/releases/latest/download/ClientLauncher.exe" class="w-full py-3.5 px-4 rounded-xl bg-gold hover:bg-gold-hover active:bg-gold-pressed text-bg font-bold text-base shadow-gold-glow flex items-center justify-center gap-2 transition-all">
+          <span data-i18n="cta.drawer">Download launcher</span>
+        </a>
+      </div>
+    </aside>
+
+    <main id="main" class="flex-1">
+      <!-- Hub -->
+      <section class="bg-[#060F1A] border-b border-border py-12 sm:py-16 animate-fade-up">
+        <div class="max-w-[1080px] mx-auto px-4 sm:px-8">
+          <span class="text-xs font-mono uppercase tracking-[0.2em] text-gold block mb-2" data-i18n="legal.eyebrow">Legal documents</span>
+          <h1 class="type-h1 text-3xl sm:text-5xl text-txt-primary mb-4" data-i18n="legal.title">Legal &amp; privacy</h1>
+          <p class="text-sm sm:text-base text-txt-secondary max-w-[720px] mb-8" data-i18n="legal.lead">Opengea is a non-profit project made by members of the community who love the game. It is 100% free: there are no donations, no shop and nothing for sale. Here is everything about how it works.</p>
+
+          <div class="flex flex-wrap gap-2 mb-10">
+            <span class="px-3 py-1.5 rounded-full bg-success/15 border border-success/40 text-success text-xs font-semibold" data-i18n="legal.badge1">✓ 100% free</span>
+            <span class="px-3 py-1.5 rounded-full bg-success/15 border border-success/40 text-success text-xs font-semibold" data-i18n="legal.badge2">✓ Non-profit</span>
+            <span class="px-3 py-1.5 rounded-full bg-success/15 border border-success/40 text-success text-xs font-semibold" data-i18n="legal.badge3">✓ No donations</span>
+            <span class="px-3 py-1.5 rounded-full bg-success/15 border border-success/40 text-success text-xs font-semibold" data-i18n="legal.badge4">✓ No data shared or sold</span>
+          </div>
+
+          <nav class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" aria-label="Legal documents" data-i18n-attr="aria-label:legal.eyebrow">
+            <a href="#notice" class="rounded-xl bg-panel border border-border p-5 card-interactive block">
+              <span class="type-h3 text-base text-txt-primary block mb-1" data-i18n="legal.notice">Legal notice</span>
+              <span class="text-xs text-txt-secondary" data-i18n="legal.noticeDesc">Who we are, non-profit, no affiliation</span>
+            </a>
+            <a href="#rules" class="rounded-xl bg-panel border border-border p-5 card-interactive block">
+              <span class="type-h3 text-base text-txt-primary block mb-1" data-i18n="legal.rules">Rules</span>
+              <span class="text-xs text-txt-secondary" data-i18n="legal.rulesDesc">Game rules and player conduct</span>
+            </a>
+            <a href="#terms" class="rounded-xl bg-panel border border-border p-5 card-interactive block">
+              <span class="type-h3 text-base text-txt-primary block mb-1" data-i18n="legal.terms">Terms of use</span>
+              <span class="text-xs text-txt-secondary" data-i18n="legal.termsDesc">The conditions for using Opengea</span>
+            </a>
+            <a href="#privacy" class="rounded-xl bg-panel border border-border p-5 card-interactive block">
+              <span class="type-h3 text-base text-txt-primary block mb-1" data-i18n="legal.privacy">Privacy</span>
+              <span class="text-xs text-txt-secondary" data-i18n="legal.privacyDesc">What is stored, and what never leaves</span>
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ============================== ENGLISH ============================== -->
+      <div data-lang="en" lang="en" class="max-w-[900px] mx-auto px-4 sm:px-8 py-12 sm:py-16 space-y-16 text-txt-secondary leading-relaxed">
+        <p class="text-xs font-mono text-txt-muted">Last updated: October 26, 2026</p>
+
+        <section id="notice" data-anchor="notice" class="space-y-4">
+          <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary">1. Legal notice</h2>
+          <div class="rounded-xl bg-panel border-l-4 border-gold p-5 text-txt-primary">
+            <strong class="text-gold">Opengea is a completely NON-PROFIT project.</strong> It is made by members of the community who enjoy the game, in their free time. There is no company behind it and nobody earns money from it.
+          </div>
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">1.1 100% free, no donations</h3>
+          <p>Opengea is and will remain 100% free. It has <strong class="text-txt-primary">no donations, no shop, no coins, no VIP or premium account and no paid items</strong>. The team does not accept money in any form.</p>
+          <p class="text-warning">If anyone asks you for money, payment or "donations" in the name of Opengea, it is a scam. Do not pay and report it to the team.</p>
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">1.2 No affiliation</h3>
+          <p>Opengea is an unofficial, fan-made project. It is <strong class="text-txt-primary">not made by, affiliated with, sponsored or endorsed by</strong> any game studio, developer or publisher. The Opengea client and the Opengea server are maintained by the community, and the server was written from scratch.</p>
+          <p>Third-party names, characters, artwork and trademarks belong to their respective owners and are used here only for non-commercial, community purposes. If you hold rights to any of this content and have a concern, contact the team and it will be handled promptly, including removal of the content.</p>
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">1.3 Official channels</h3>
+          <p>The official sources of information about Opengea are this website, the news inside the launcher and the <a class="text-teal hover:underline" href="https://github.com/launcher-client-dist/launcher/releases/latest" target="_blank" rel="noopener">latest launcher release on GitHub</a>. Only download the launcher from this website or that link; the launcher installs and updates the game client by itself.</p>
+        </section>
+
+        <section id="rules" data-anchor="rules" class="space-y-4">
+          <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary">2. Rules</h2>
+          <p>By playing on Opengea you agree to the rules below. The team may act on harmful conduct in the game, on this website or on any other platform related to Opengea. This includes, but is not limited to:</p>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.1 Names</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Staff names:</strong> names that imitate or refer to the team, the support or a Game Master are not allowed.</li>
+            <li><strong class="text-txt-primary">Offensive or inappropriate names:</strong> offensive, discriminatory, extremist or otherwise inappropriate names are removed and may be punished.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.2 Cheating</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Bug abuse:</strong> exploiting bugs or errors is not allowed. Report them to the team instead.</li>
+            <li><strong class="text-txt-primary">Unauthorized software:</strong> using software that plays for you or gives you an unfair advantage (bots, hacks, packet manipulation) is not allowed.</li>
+            <li><strong class="text-txt-primary">Account sharing:</strong> your account is personal. Losses from sharing it are not restored.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.3 Messages and conduct</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Respect:</strong> harassment, insults, racism, sexism, homophobia, xenophobia, any discrimination and extremism are not tolerated.</li>
+            <li><strong class="text-txt-primary">Real-life threats:</strong> threatening anyone's life, safety or family, or threatening to find or expose real-life information, leads to a ban. A joking tone does not excuse it.</li>
+            <li><strong class="text-txt-primary">Personal data:</strong> do not share or ask for personal information about other players or anyone else. Exposing personal data also breaks the Brazilian data protection law (LGPD).</li>
+            <li><strong class="text-txt-primary">Spam and advertising:</strong> no repeated or off-topic messages in public channels, and no advertising of other servers or commercial products.</li>
+            <li><strong class="text-txt-primary">Supporting rule violations:</strong> do not encourage or take part in actions that break these rules.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.4 Nothing for sale</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li>Opengea has nothing for sale. Buying or selling accounts, characters, items or in-game gold for real money is not allowed.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.5 The team and the project</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Pretending to be staff:</strong> pretending to be a member of the team or a Game Master is strictly forbidden.</li>
+            <li><strong class="text-txt-primary">False information:</strong> do not spread false information about Opengea or its team.</li>
+            <li><strong class="text-txt-primary">Attacks:</strong> attacking or supporting attacks on the server, the website or any Opengea service (for example DDoS or exploits) is forbidden.</li>
+            <li><strong class="text-txt-primary">The law:</strong> players must follow all applicable real-life laws.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.6 Penalties</h3>
+          <p>Breaking or trying to break these rules may lead to temporary or permanent penalties on characters and accounts, including removal of items or progress and deletion of the account. The penalty depends on how serious the violation is and on the player's history. Decisions are made by the team and may be applied without prior notice. These rules may change at any time; changes are announced on the official channels.</p>
+        </section>
+
+        <section id="terms" data-anchor="terms" class="space-y-4">
+          <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary">3. Terms of use</h2>
+          <p><strong class="text-txt-primary">3.1 Acceptance.</strong> By using this website, the Opengea launcher, the Opengea client or the Opengea server you agree to these terms, the rules above and the privacy policy below. If you do not agree, do not use Opengea.</p>
+          <p><strong class="text-txt-primary">3.2 Free, non-profit service.</strong> Opengea is offered free of charge by volunteers. No payment is ever requested or accepted, and there are no paid features.</p>
+          <p><strong class="text-txt-primary">3.3 Provided "as is".</strong> Opengea is a community project in development. It is provided as is, without guarantees of any kind: the service may be unavailable, restart (there is a daily restart at 09:00 UTC), have errors, or have accounts, characters and progress changed or reset.</p>
+          <p><strong class="text-txt-primary">3.4 Limitation of liability.</strong> To the extent permitted by law, the team is not responsible for any loss or damage arising from the use of, or inability to use, Opengea, including loss of items, characters or accounts caused by errors, maintenance, attacks by third parties or changes to the game.</p>
+          <p><strong class="text-txt-primary">3.5 Your responsibilities.</strong> Follow the rules, keep your password secret and use a password you do not use anywhere else. The team will never ask for your password. Download the launcher only from the official links.</p>
+          <p><strong class="text-txt-primary">3.6 Minors.</strong> If you are under 18, only play with the consent of a parent or legal guardian.</p>
+          <p><strong class="text-txt-primary">3.7 Healthy play.</strong> Long gaming sessions can affect your physical and mental health. Take regular breaks.</p>
+          <p><strong class="text-txt-primary">3.8 Changes.</strong> These terms may be updated. The current version is always on this page, with its date at the top.</p>
+        </section>
+
+        <section id="privacy" data-anchor="privacy" class="space-y-4">
+          <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary">4. Privacy</h2>
+          <div class="rounded-xl bg-panel border-l-4 border-success p-5 text-txt-primary">
+            <strong class="text-success">No sensitive data is published. Nothing is shared or sold.</strong> Opengea keeps only the minimum needed to run the game, never uses it for advertising or profiling, and never sends it to anyone.
+          </div>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.1 This website</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li>No cookies, no analytics, no tracking and no ads.</li>
+            <li>Your language choice is saved only in your own browser (local storage).</li>
+            <li>To show the latest versions, your browser asks the public GitHub API for the release numbers. The site is hosted on GitHub Pages; GitHub handles these requests under its own <a class="text-teal hover:underline" href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">privacy statement</a>.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.2 The launcher</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li>The launcher only downloads public files (game, news, patch notes) from the official GitHub releases. It does not connect to the game server and sends no telemetry.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.3 Your game account</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Password:</strong> never stored. The server keeps only an irreversible protected form of it, so nobody, including the team, can read it.</li>
+            <li><strong class="text-txt-primary">E-mail:</strong> never stored either. The server keeps only a one-way hash of it, used only to stop the same address from creating two accounts. No e-mail is ever sent.</li>
+            <li><strong class="text-txt-primary">Game data:</strong> your login name, characters and progress, needed to play.</li>
+            <li><strong class="text-txt-primary">Technical logs:</strong> connection logs that include IP addresses, used only for security (for example, limiting login attempts and stopping abuse) and to fix problems. Passwords, tokens and e-mails are removed from these logs.</li>
+            <li><strong class="text-txt-primary">Backups:</strong> the server state is backed up so the game can be restored after a failure.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.4 Sharing</h3>
+          <p>Your data is <strong class="text-txt-primary">not sold, rented or shared</strong> with anyone. The only other parties involved are the infrastructure providers that host the server and carry its traffic (the server host, Cloudflare and GitHub), which only process it to provide their service.</p>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.5 Your rights (LGPD)</h3>
+          <p>Under the Brazilian General Data Protection Law (LGPD, Law nº 13.709/2018) you may ask to access, correct or delete your data, including deleting your account. Contact the team in game (a Game Master) or through the official channels.</p>
+        </section>
+      </div>
+
+      <!-- ============================== PORTUGUÊS ============================== -->
+      <div data-lang="pt-BR" lang="pt-BR" hidden class="max-w-[900px] mx-auto px-4 sm:px-8 py-12 sm:py-16 space-y-16 text-txt-secondary leading-relaxed">
+        <p class="text-xs font-mono text-txt-muted">Última atualização: 26 de outubro de 2026</p>
+
+        <section id="notice-pt" data-anchor="notice" class="space-y-4">
+          <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary">1. Aviso legal</h2>
+          <div class="rounded-xl bg-panel border-l-4 border-gold p-5 text-txt-primary">
+            <strong class="text-gold">O Opengea é um projeto totalmente SEM FINS LUCRATIVOS.</strong> Ele é feito por membros da comunidade que gostam do jogo, no seu tempo livre. Não há empresa por trás e ninguém ganha dinheiro com ele.
+          </div>
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">1.1 100% gratuito, sem doações</h3>
+          <p>O Opengea é e continuará 100% gratuito. Ele <strong class="text-txt-primary">não tem doações, loja, coins, VIP, conta premium nem itens pagos</strong>. A equipe não aceita dinheiro de nenhuma forma.</p>
+          <p class="text-warning">Se alguém pedir dinheiro, pagamento ou "doação" em nome do Opengea, é golpe. Não pague e avise a equipe.</p>
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">1.2 Sem afiliação</h3>
+          <p>O Opengea é um projeto não oficial, feito por fãs. Ele <strong class="text-txt-primary">não é feito, afiliado, patrocinado nem endossado</strong> por nenhum estúdio, desenvolvedor ou distribuidor de jogos. O cliente e o servidor Opengea são mantidos pela comunidade, e o servidor foi escrito do zero.</p>
+          <p>Nomes, personagens, artes e marcas de terceiros pertencem aos seus respectivos donos e são usados aqui apenas para fins comunitários e não comerciais. Se você tem direitos sobre algum desses conteúdos e tem alguma preocupação, fale com a equipe e o caso será tratado rapidamente, inclusive com a remoção do conteúdo.</p>
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">1.3 Canais oficiais</h3>
+          <p>As fontes oficiais de informação do Opengea são este site, as notícias dentro do launcher e a <a class="text-teal hover:underline" href="https://github.com/launcher-client-dist/launcher/releases/latest" target="_blank" rel="noopener">versão mais recente do launcher no GitHub</a>. Baixe o launcher somente por este site ou por esse link; o launcher instala e atualiza o cliente do jogo sozinho.</p>
+        </section>
+
+        <section id="rules-pt" data-anchor="rules" class="space-y-4">
+          <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary">2. Regras</h2>
+          <p>Ao jogar no Opengea você concorda com as regras abaixo. A equipe pode intervir em condutas prejudiciais no jogo, neste site ou em qualquer outra plataforma ligada ao Opengea. Isso inclui, mas não se limita a:</p>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.1 Nomes</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Nomes de staff:</strong> não são permitidos nomes que imitem ou façam referência à equipe, ao suporte ou a um Game Master.</li>
+            <li><strong class="text-txt-primary">Nomes ofensivos ou inadequados:</strong> nomes ofensivos, discriminatórios, extremistas ou inadequados são removidos e podem ser punidos.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.2 Trapaças</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Abuso de bug:</strong> é proibido explorar bugs ou erros. Reporte-os para a equipe.</li>
+            <li><strong class="text-txt-primary">Software não autorizado:</strong> é proibido usar programas que joguem por você ou deem vantagem injusta (bots, hacks, manipulação de pacotes).</li>
+            <li><strong class="text-txt-primary">Compartilhar conta:</strong> sua conta é pessoal. Perdas por compartilhamento não são devolvidas.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.3 Mensagens e conduta</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Respeito:</strong> assédio, insultos, racismo, sexismo, homofobia, xenofobia, qualquer discriminação e extremismo não são tolerados.</li>
+            <li><strong class="text-txt-primary">Ameaças da vida real:</strong> ameaçar a vida, a segurança ou a família de alguém, ou ameaçar descobrir ou expor dados da vida real, leva a banimento. Tom de brincadeira não isenta a punição.</li>
+            <li><strong class="text-txt-primary">Dados pessoais:</strong> não compartilhe nem peça informações pessoais de outros jogadores ou de qualquer pessoa. Expor dados pessoais também infringe a LGPD.</li>
+            <li><strong class="text-txt-primary">Spam e propaganda:</strong> nada de mensagens repetidas ou fora de contexto nos canais públicos, nem divulgação de outros servidores ou produtos comerciais.</li>
+            <li><strong class="text-txt-primary">Apoio a violações:</strong> não incentive nem participe de ações que quebrem estas regras.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.4 Nada à venda</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li>O Opengea não vende nada. É proibido comprar ou vender contas, personagens, itens ou gold do jogo por dinheiro real.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.5 A equipe e o projeto</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Fingir ser staff:</strong> é estritamente proibido fingir ser membro da equipe ou Game Master.</li>
+            <li><strong class="text-txt-primary">Informação falsa:</strong> não espalhe informações falsas sobre o Opengea ou sua equipe.</li>
+            <li><strong class="text-txt-primary">Ataques:</strong> é proibido atacar ou apoiar ataques ao servidor, ao site ou a qualquer serviço do Opengea (por exemplo DDoS ou exploits).</li>
+            <li><strong class="text-txt-primary">A lei:</strong> os jogadores devem cumprir todas as leis da vida real aplicáveis.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">2.6 Punições</h3>
+          <p>Quebrar ou tentar quebrar estas regras pode resultar em punições temporárias ou permanentes em personagens e contas, incluindo a remoção de itens ou progresso e a exclusão da conta. A punição depende da gravidade da infração e do histórico do jogador. As decisões são da equipe e podem ser aplicadas sem aviso prévio. Estas regras podem mudar a qualquer momento; as mudanças são anunciadas nos canais oficiais.</p>
+        </section>
+
+        <section id="terms-pt" data-anchor="terms" class="space-y-4">
+          <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary">3. Termos de uso</h2>
+          <p><strong class="text-txt-primary">3.1 Aceitação.</strong> Ao usar este site, o launcher, o cliente ou o servidor do Opengea você concorda com estes termos, com as regras acima e com a política de privacidade abaixo. Se não concordar, não use o Opengea.</p>
+          <p><strong class="text-txt-primary">3.2 Serviço gratuito e sem fins lucrativos.</strong> O Opengea é oferecido de graça por voluntários. Nenhum pagamento é pedido ou aceito, e não existem recursos pagos.</p>
+          <p><strong class="text-txt-primary">3.3 Fornecido "como está".</strong> O Opengea é um projeto da comunidade em desenvolvimento. Ele é fornecido como está, sem garantias de nenhum tipo: o serviço pode ficar indisponível, reiniciar (há um reinício diário às 09:00 UTC), ter erros, ou ter contas, personagens e progresso alterados ou reiniciados.</p>
+          <p><strong class="text-txt-primary">3.4 Limitação de responsabilidade.</strong> Na medida permitida pela lei, a equipe não é responsável por perdas ou danos decorrentes do uso, ou da impossibilidade de uso, do Opengea, incluindo a perda de itens, personagens ou contas causada por erros, manutenção, ataques de terceiros ou mudanças no jogo.</p>
+          <p><strong class="text-txt-primary">3.5 Suas responsabilidades.</strong> Siga as regras, mantenha sua senha em segredo e use uma senha que você não usa em nenhum outro lugar. A equipe nunca vai pedir sua senha. Baixe o launcher somente pelos links oficiais.</p>
+          <p><strong class="text-txt-primary">3.6 Menores de idade.</strong> Se você tem menos de 18 anos, jogue somente com o consentimento de um responsável legal.</p>
+          <p><strong class="text-txt-primary">3.7 Jogue com saúde.</strong> Sessões longas de jogo podem afetar sua saúde física e mental. Faça pausas regulares.</p>
+          <p><strong class="text-txt-primary">3.8 Alterações.</strong> Estes termos podem ser atualizados. A versão atual está sempre nesta página, com a data no topo.</p>
+        </section>
+
+        <section id="privacy-pt" data-anchor="privacy" class="space-y-4">
+          <h2 class="type-h2 text-2xl sm:text-3xl text-txt-primary">4. Privacidade</h2>
+          <div class="rounded-xl bg-panel border-l-4 border-success p-5 text-txt-primary">
+            <strong class="text-success">Nenhum dado sensível é divulgado. Nada é compartilhado ou vendido.</strong> O Opengea guarda só o mínimo necessário para o jogo funcionar, nunca usa esses dados para publicidade ou perfil e nunca os envia para ninguém.
+          </div>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.1 Este site</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li>Sem cookies, sem analytics, sem rastreamento e sem anúncios.</li>
+            <li>Sua escolha de idioma fica salva apenas no seu próprio navegador (armazenamento local).</li>
+            <li>Para mostrar as versões mais recentes, seu navegador consulta a API pública do GitHub. O site é hospedado no GitHub Pages; o GitHub trata essas requisições conforme a sua própria <a class="text-teal hover:underline" href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">declaração de privacidade</a>.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.2 O launcher</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li>O launcher só baixa arquivos públicos (jogo, notícias, notas de atualização) das versões oficiais no GitHub. Ele não se conecta ao servidor do jogo e não envia telemetria.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.3 Sua conta no jogo</h3>
+          <ul class="space-y-2 pl-5 list-disc marker:text-gold">
+            <li><strong class="text-txt-primary">Senha:</strong> nunca é guardada. O servidor guarda apenas uma forma protegida e irreversível dela, então ninguém, nem a equipe, consegue lê-la.</li>
+            <li><strong class="text-txt-primary">E-mail:</strong> também nunca é guardado. O servidor guarda só um hash irreversível dele, usado apenas para impedir que o mesmo endereço crie duas contas. Nenhum e-mail é enviado.</li>
+            <li><strong class="text-txt-primary">Dados do jogo:</strong> seu login, personagens e progresso, necessários para jogar.</li>
+            <li><strong class="text-txt-primary">Logs técnicos:</strong> registros de conexão que incluem endereços IP, usados só para segurança (por exemplo, limitar tentativas de login e impedir abusos) e para corrigir problemas. Senhas, tokens e e-mails são removidos desses registros.</li>
+            <li><strong class="text-txt-primary">Backups:</strong> o estado do servidor tem cópia de segurança para o jogo poder ser restaurado após uma falha.</li>
+          </ul>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.4 Compartilhamento</h3>
+          <p>Seus dados <strong class="text-txt-primary">não são vendidos, alugados nem compartilhados</strong> com ninguém. Os únicos terceiros envolvidos são os provedores de infraestrutura que hospedam o servidor e transportam o tráfego (a hospedagem do servidor, a Cloudflare e o GitHub), que só os processam para prestar o próprio serviço.</p>
+
+          <h3 class="type-h3 text-lg text-txt-primary pt-2">4.5 Seus direitos (LGPD)</h3>
+          <p>Pela Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018) você pode pedir acesso, correção ou exclusão dos seus dados, incluindo a exclusão da sua conta. Fale com a equipe no jogo (um Game Master) ou pelos canais oficiais.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-[#050C14] border-t border-border mt-auto">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-txt-muted">
+        <div>© 2026 Opengea · <a href="./" class="hover:text-txt-primary" data-i18n="nav.home">Home</a></div>
+        <div class="text-center sm:text-right max-w-[640px]" data-i18n="footer.disclaimer">Opengea is a non-profit community project: 100% free, with no donations. It is an unofficial fan project, not affiliated with or endorsed by any game studio or publisher.</div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
