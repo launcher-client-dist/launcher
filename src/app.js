@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.5, client v0.0.23), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.5, client v0.0.24), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.5',
     launcherBytes: 66404117,
     launcherSha: '63428b684ba266c2acb674860cf6b341262f7b703d2b452d0715c1a4f3b106da',
-    clientVersion: '0.0.23',
-    clientBytes: 661947429,
-    clientInstalledBytes: 1127219679
+    clientVersion: '0.0.24',
+    clientBytes: 661980073,
+    clientInstalledBytes: 1127362093
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,11 +71,11 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.23',
+      'patch.title': 'Latest in v0.0.24',
       'patch.all': 'Full changelog →',
-      'patch.1': 'General client adjustments',
-      'patch.2': 'Client stability',
-      'patch.3': 'General fixes and polish',
+      'patch.1': "The Market wears the game's own look",
+      'patch.2': 'Item rarity shown as a coloured border',
+      'patch.3': 'Clearer text and smoother browsing',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -254,11 +254,11 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.23',
+      'patch.title': 'Novidades da v0.0.24',
       'patch.all': 'Changelog completo →',
-      'patch.1': 'Ajustes gerais no cliente',
-      'patch.2': 'Estabilidade do cliente',
-      'patch.3': 'Correções gerais e ajustes',
+      'patch.1': 'O Market com o visual do próprio jogo',
+      'patch.2': 'Raridade do item como uma borda colorida',
+      'patch.3': 'Texto mais nítido e navegação mais suave',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
