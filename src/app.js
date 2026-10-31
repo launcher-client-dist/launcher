@@ -407,7 +407,7 @@
     { img: 'shot-gathering', w: 1057 },
     { img: 'shot-boss', w: 1536 },
     { img: 'shot-motorcycle', w: 1110 },
-    { img: 'shot-market', w: 1054, pos: 'center 20%' }
+    { img: 'shot-market', w: 1240, pos: 'center 20%' }
   ];
 
   /* ------------------------------------------------------------------ */
