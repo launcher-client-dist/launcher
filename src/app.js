@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.6, client v0.0.24), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.6, client v0.0.26), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.6',
     launcherBytes: 66404350,
     launcherSha: 'a865421ae109ea87ee3dfcbee78cb11eb645be7dc9e00328aca2b0796149cfdd',
-    clientVersion: '0.0.24',
-    clientBytes: 661980073,
-    clientInstalledBytes: 1127362093
+    clientVersion: '0.0.26',
+    clientBytes: 662021352,
+    clientInstalledBytes: 1127437098
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,11 +71,11 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.24',
+      'patch.title': 'Latest in v0.0.26',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': "The Market wears the game's own look",
-      'patch.2': 'Item rarity shown as a coloured border',
-      'patch.3': 'Clearer text and smoother browsing',
+      'patch.1': 'NPCs speak and understand Portuguese',
+      'patch.2': 'Books, letters and notes in Portuguese',
+      'patch.3': 'The Market fits any display scaling',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -115,8 +115,8 @@
       'news.readMarket': 'See the Market',
       'news.1.title': 'A fresh look for the Market',
       'news.1.text': "Client v0.0.24 gives the Market the game's own windows, icons and pixel fonts, with every item's rarity at a glance. Buy, sell and place orders right from your depot.",
-      'news.2.title': 'Launcher v0.3.3: pick your language',
-      'news.2.text': 'A new language button at the top of the launcher switches the launcher and the game. It updates itself the next time it opens.',
+      'news.2.title': 'The world speaks Portuguese',
+      'news.2.text': 'Client v0.0.26 brings NPCs who talk to you and understand you in Portuguese, plus books, letters and notes to read in Portuguese. Pick the language in the launcher.',
       'news.3.title': 'An active community',
       'news.3.text': 'Call your friends to take on quests and slay bosses together.',
       'news.readCommunity': 'See the screenshots',
@@ -255,11 +255,11 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.24',
+      'patch.title': 'Novidades da v0.0.26',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'O Market com o visual do próprio jogo',
-      'patch.2': 'Raridade do item como uma borda colorida',
-      'patch.3': 'Texto mais nítido e navegação mais suave',
+      'patch.1': 'NPCs falam e entendem português',
+      'patch.2': 'Livros, cartas e bilhetes em português',
+      'patch.3': 'O Market se ajusta a qualquer escala de tela',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
@@ -299,8 +299,8 @@
       'news.readMarket': 'Ver o Market',
       'news.1.title': 'Um novo visual para o Market',
       'news.1.text': 'O cliente v0.0.24 dá ao Market as janelas, os ícones e as fontes pixeladas do próprio jogo, com a raridade de cada item à vista. Compre, venda e crie ordens direto do depot.',
-      'news.2.title': 'Launcher v0.3.3: escolha seu idioma',
-      'news.2.text': 'Um novo botão de idioma no topo do launcher troca o idioma do launcher e do jogo. Ele se atualiza sozinho da próxima vez que abrir.',
+      'news.2.title': 'O mundo fala português',
+      'news.2.text': 'O cliente v0.0.26 traz NPCs que conversam com você e te entendem em português, além de livros, cartas e bilhetes para ler em português. Escolha o idioma no launcher.',
       'news.3.title': 'Comunidade ativa',
       'news.3.text': 'Chame seus amigos para fazer quests e matar bosses juntos.',
       'news.readCommunity': 'Ver as capturas',
