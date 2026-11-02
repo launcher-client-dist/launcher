@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.6, client v0.0.27), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.6, client v0.0.28), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.6',
     launcherBytes: 66404350,
     launcherSha: 'a865421ae109ea87ee3dfcbee78cb11eb645be7dc9e00328aca2b0796149cfdd',
-    clientVersion: '0.0.27',
-    clientBytes: 662021904,
-    clientInstalledBytes: 1127438122
+    clientVersion: '0.0.28',
+    clientBytes: 661348973,
+    clientInstalledBytes: 1126039346
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,11 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.27',
+      'patch.title': 'Latest in v0.0.28',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'The Market closes cleanly every time',
-      'patch.2': 'Your keyboard returns to the game at once',
-      'patch.3': 'General polish',
+      'patch.1': 'Players in depots and temples are visible from outside',
+      'patch.2': 'General polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -263,11 +262,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.27',
+      'patch.title': 'Novidades da v0.0.28',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'O Market fecha por completo sempre',
-      'patch.2': 'O teclado volta para o jogo na hora',
-      'patch.3': 'Ajustes gerais',
+      'patch.1': 'Jogadores em depots e templos aparecem para quem está fora',
+      'patch.2': 'Ajustes gerais',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
