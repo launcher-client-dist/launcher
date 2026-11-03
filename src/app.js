@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.6, client v0.0.28), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.6, client v0.0.29), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.6',
     launcherBytes: 66404350,
     launcherSha: 'a865421ae109ea87ee3dfcbee78cb11eb645be7dc9e00328aca2b0796149cfdd',
-    clientVersion: '0.0.28',
-    clientBytes: 661348973,
-    clientInstalledBytes: 1126039346
+    clientVersion: '0.0.29',
+    clientBytes: 659701017,
+    clientInstalledBytes: 1129394213
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,12 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.28',
+      'patch.title': 'Latest in v0.0.29',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'Players in depots and temples are visible from outside',
-      'patch.2': 'General polish',
+      'patch.1': 'A Mounts window for every player: pick, ride and heal',
+      'patch.2': "The Tamer's Stable and Bram's mission for a rat shipper",
+      'patch.3': 'The sign-in screen tells you when to update',
+      'patch.4': 'General polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -115,6 +117,8 @@
       'news.readMarket': 'See the Market',
       'news.1.title': 'A fresh look for the Market',
       'news.1.text': "Client v0.0.24 gives the Market the game's own windows, icons and pixel fonts, with every item's rarity at a glance. Buy, sell and place orders right from your depot.",
+      'news.5.title': "Mounts and the Tamer's Stable",
+      'news.5.text': 'Client v0.0.29 gives every player a Mounts window: pick, ride and heal your mounts. Bram the beast tamer opens his stable by the market road: earn his trust and he has a rat shipper for you.',
       'news.2.title': 'The world speaks Portuguese',
       'news.2.text': 'Client v0.0.26 brings NPCs who talk to you and understand you in Portuguese, plus books, letters and notes to read in Portuguese. Pick the language in the launcher.',
       'news.3.title': 'An active community',
@@ -262,10 +266,12 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.28',
+      'patch.title': 'Novidades da v0.0.29',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Jogadores em depots e templos aparecem para quem está fora',
-      'patch.2': 'Ajustes gerais',
+      'patch.1': 'Janela de Montarias para todos: escolha, monte e cure',
+      'patch.2': 'O Estábulo do Domador e a missão do Bram por um rat shipper',
+      'patch.3': 'A tela de login avisa quando atualizar',
+      'patch.4': 'Ajustes gerais',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
@@ -306,6 +312,8 @@
       'news.readMarket': 'Ver o Market',
       'news.1.title': 'Um novo visual para o Market',
       'news.1.text': 'O cliente v0.0.24 dá ao Market as janelas, os ícones e as fontes pixeladas do próprio jogo, com a raridade de cada item à vista. Compre, venda e crie ordens direto do depot.',
+      'news.5.title': 'Montarias e o Estábulo do Domador',
+      'news.5.text': 'O cliente v0.0.29 dá a todos os jogadores uma janela de Montarias: escolha, monte e cure suas montarias. Bram, o domador de feras, abre seu estábulo na rua do mercado: ganhe a confiança dele e ele tem um rat shipper para você.',
       'news.2.title': 'O mundo fala português',
       'news.2.text': 'O cliente v0.0.26 traz NPCs que conversam com você e te entendem em português, além de livros, cartas e bilhetes para ler em português. Escolha o idioma no launcher.',
       'news.3.title': 'Comunidade ativa',
