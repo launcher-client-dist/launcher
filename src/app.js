@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.6, client v0.0.29), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.6, client v0.0.30), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.6',
     launcherBytes: 66404350,
     launcherSha: 'a865421ae109ea87ee3dfcbee78cb11eb645be7dc9e00328aca2b0796149cfdd',
-    clientVersion: '0.0.29',
-    clientBytes: 659701017,
-    clientInstalledBytes: 1129394213
+    clientVersion: '0.0.30',
+    clientBytes: 659710277,
+    clientInstalledBytes: 1129411230
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,12 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.29',
+      'patch.title': 'Latest in v0.0.30',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'A Mounts window for every player: pick, ride and heal',
-      'patch.2': "The Tamer's Stable and Bram's mission for a rat shipper",
-      'patch.3': 'The sign-in screen tells you when to update',
-      'patch.4': 'General polish',
+      'patch.1': 'A more stable and reliable connection to the game',
+      'patch.2': 'General polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -270,12 +268,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.29',
+      'patch.title': 'Novidades da v0.0.30',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Janela de Montarias para todos: escolha, monte e cure',
-      'patch.2': 'O Estábulo do Domador e a missão do Bram por um rat shipper',
-      'patch.3': 'A tela de login avisa quando atualizar',
-      'patch.4': 'Ajustes gerais',
+      'patch.1': 'Uma conexão mais estável e confiável com o jogo',
+      'patch.2': 'Ajustes gerais',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
