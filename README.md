@@ -31,11 +31,13 @@ npm run serve          # build, then http://localhost:8080
 
 ## Deploy
 
-Published at https://play.apogea.dpdns.org/ from the `gh-pages` branch of
+Published at https://opengea.tech/ (since 2026-11-04; before it, play.apogea.dpdns.org) from the `gh-pages` branch of
 `launcher-client-dist/launcher` (this source lives on its `site` branch; `main` and the releases are untouched).
 To deploy: `npm run build`, then push `dist/` to `gh-pages` (`npm run deploy`).
 
 The deploy replaces `gh-pages` with a fresh commit, so the custom domain lives in `src/CNAME`: without it in the
 build, GitHub Pages drops the domain and the site falls back to https://launcher-client-dist.github.io/launcher/.
-The domain's DNS (Cloudflare) is a CNAME `play` -> `launcher-client-dist.github.io`, DNS only (not proxied).
+The domain's DNS (Cloudflare, zone opengea.tech) is the apex's four GitHub Pages A records (185.199.108-111.153),
+DNS only (not proxied), and `www` a CNAME to `launcher-client-dist.github.io`. play.opengea.tech and
+play.apogea.dpdns.org redirect to https://opengea.tech.
 
