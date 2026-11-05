@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.6, client v0.0.30), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.6, client v0.0.31), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.6',
     launcherBytes: 66404350,
     launcherSha: 'a865421ae109ea87ee3dfcbee78cb11eb645be7dc9e00328aca2b0796149cfdd',
-    clientVersion: '0.0.30',
-    clientBytes: 659710277,
-    clientInstalledBytes: 1129411230
+    clientVersion: '0.0.31',
+    clientBytes: 659716047,
+    clientInstalledBytes: 1129421524
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,9 +71,9 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.30',
+      'patch.title': 'Latest in v0.0.31',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'A more stable and reliable connection to the game',
+      'patch.1': 'Improved connection stability',
       'patch.2': 'General polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
@@ -268,9 +268,9 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.30',
+      'patch.title': 'Novidades da v0.0.31',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Uma conexão mais estável e confiável com o jogo',
+      'patch.1': 'Estabilidade de conexão melhorada',
       'patch.2': 'Ajustes gerais',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
