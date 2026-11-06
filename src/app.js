@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.6, client v0.0.33), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.6, client v0.0.34), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.6',
     launcherBytes: 66404350,
     launcherSha: 'a865421ae109ea87ee3dfcbee78cb11eb645be7dc9e00328aca2b0796149cfdd',
-    clientVersion: '0.0.33',
-    clientBytes: 660210018,
-    clientInstalledBytes: 1134726139
+    clientVersion: '0.0.34',
+    clientBytes: 487265873,
+    clientInstalledBytes: 769620719
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,12 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.33',
+      'patch.title': 'Latest in v0.0.34',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'Improved map pathfinder: click anywhere on the map to walk there',
-      'patch.2': 'Improved auto-targeting',
-      'patch.3': 'Improved movement in protected areas',
-      'patch.4': 'Fixed a Portuguese interface text',
+      'patch.1': 'General Market improvements',
+      'patch.2': 'Smaller game download',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -270,12 +268,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.33',
+      'patch.title': 'Novidades da v0.0.34',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Pathfinder do mapa melhorado: clique em qualquer lugar do mapa para andar até lá',
-      'patch.2': 'Mira automática melhorada',
-      'patch.3': 'Movimentação melhorada em áreas protegidas',
-      'patch.4': 'Corrigido um texto da interface em português',
+      'patch.1': 'Melhoria geral no Market',
+      'patch.2': 'Download do jogo menor',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
