@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.6, client v0.0.35), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.6, client v0.0.36), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.6',
     launcherBytes: 66404350,
     launcherSha: 'a865421ae109ea87ee3dfcbee78cb11eb645be7dc9e00328aca2b0796149cfdd',
-    clientVersion: '0.0.35',
-    clientBytes: 487266592,
-    clientInstalledBytes: 769621231
+    clientVersion: '0.0.36',
+    clientBytes: 487278821,
+    clientInstalledBytes: 769648241
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,9 +71,9 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.35',
+      'patch.title': 'Latest in v0.0.36',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'General Market fixes',
+      'patch.1': 'General client adjustments',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -267,9 +267,9 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.35',
+      'patch.title': 'Novidades da v0.0.36',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Correções gerais no Market',
+      'patch.1': 'Ajustes gerais no cliente',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
