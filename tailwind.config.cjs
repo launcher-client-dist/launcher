@@ -1,6 +1,6 @@
 /** Design tokens from the Opengea / "The Vanguard" design system. */
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ['./src/**/*.{html,js}', './scripts/seo/**/*.mjs'],
   theme: {
     extend: {
       colors: {

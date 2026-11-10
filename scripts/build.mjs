@@ -27,4 +27,31 @@ for (const page of ['index.html', 'legal.html', '404.html']) {
   }
   writeFileSync(file, html);
 }
-console.log('Built', path.relative(root, dist), versions);
+
+// The guide pages (scripts/seo/pages.mjs): one folder each (/apogea-release-date/index.html), then the
+// sitemap and robots.txt that list them with the home and legal pages.
+const { PAGES } = await import('./seo/pages.mjs');
+const { render, url, SITE } = await import('./seo/template.mjs');
+const bySlug = Object.fromEntries(PAGES.map((p) => [p.slug, p]));
+for (const page of PAGES) {
+  for (const s of [page.alt, ...(page.related || [])].filter(Boolean)) {
+    if (!bySlug[s]) throw new Error(`seo page ${page.slug}: unknown link ${s}`);
+  }
+  const dir = path.join(dist, ...page.slug.split('/'));
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(path.join(dir, 'index.html'), render(page, bySlug, versions));
+}
+const today = new Date().toISOString().slice(0, 10);
+const entry = (loc, alts = []) => `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>${alts.map((a) => `\n    <xhtml:link rel="alternate" hreflang="${a.lang}" href="${a.href}" />`).join('')}\n  </url>`;
+const sitemap = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+  entry(`${SITE}/`),
+  entry(`${SITE}/legal.html`),
+  ...PAGES.map((p) => entry(url(p.slug), p.alt ? [{ lang: p.lang, href: url(p.slug) }, { lang: bySlug[p.alt].lang, href: url(p.alt) }] : [])),
+  '</urlset>',
+  '',
+].join('\n');
+writeFileSync(path.join(dist, 'sitemap.xml'), sitemap);
+writeFileSync(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
+console.log('Built', path.relative(root, dist), versions, `${PAGES.length} guide pages`);

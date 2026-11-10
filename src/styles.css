@@ -44,6 +44,17 @@
 
   .nav-link { @apply px-4 py-2 rounded-lg text-sm font-medium transition-colors text-txt-secondary hover:text-txt-primary hover:bg-panel/60; }
   .nav-link[aria-current="true"] { @apply font-semibold text-gold bg-gold/10 hover:text-gold hover:bg-gold/10; }
+  /* Keyword guide pages (scripts/seo): long-form text */
+  .seo-prose { @apply text-[15px] sm:text-base leading-relaxed text-txt-secondary; }
+  .seo-prose > * + * { @apply mt-4; }
+  .seo-prose strong { @apply text-txt-primary font-semibold; }
+  .seo-prose a { @apply text-teal hover:underline; }
+  .seo-prose ul { @apply list-disc pl-5 space-y-1.5; }
+  .seo-prose ol { @apply list-decimal pl-5 space-y-1.5; }
+  .seo-prose table { @apply w-full text-sm border-collapse; }
+  .seo-prose th { @apply text-left font-semibold text-txt-primary border-b border-border py-2 pr-3; }
+  .seo-prose td { @apply border-b border-border/60 py-2 pr-3 align-top; }
+  .seo-lead { @apply text-base sm:text-lg text-txt-primary/90; }
 
   .vg-tab { @apply px-3 py-2 rounded-lg text-left text-xs font-medium text-txt-secondary hover:text-txt-primary whitespace-nowrap border border-transparent transition-colors; }
   .vg-tab[aria-selected="true"] { @apply font-semibold bg-gold/15 text-gold border-gold/40 hover:text-gold; }
