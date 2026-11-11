@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.9, client v0.0.41), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.9, client v0.0.42), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.9',
     launcherBytes: 66414644,
     launcherSha: 'e3a72746a51678a6fe78002a2eea3c32a2a33e497711a7d811e7842c66dcc1c9',
-    clientVersion: '0.0.41',
-    clientBytes: 488217167,
-    clientInstalledBytes: 778171651
+    clientVersion: '0.0.42',
+    clientBytes: 488224961,
+    clientInstalledBytes: 778188584
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.41',
+      'patch.title': 'Latest in v0.0.42',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'General client adjustments',
-      'patch.2': 'The NPC trade icon and dialogue suggestions work again',
+      'patch.1': 'Line spells show their real area while you aim, and equipped runes show in your spell numbers',
+      'patch.2': 'Queen Zoe shows her boss health bar, ring sparkles stop when the ring runs out, and general client fixes',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -121,6 +121,8 @@
       'news.1.text': "Client v0.0.24 gives the Market the game's own windows, icons and pixel fonts, with every item's rarity at a glance. Buy, sell and place orders right from your depot.",
       'news.5.title': "Mounts and the Tamer's Stable",
       'news.5.text': 'Client v0.0.29 gives every player a Mounts window: pick, ride and heal your mounts. Bram the beast tamer opens his stable by the market road: earn his trust and he has a rat shipper for you.',
+      'news.6.title': 'Spells, runes and bosses',
+      'news.6.text': 'Client v0.0.42: line spells show their real area while you aim, equipped runes show in your spell numbers and Queen Zoe gets her boss health bar.',
       'news.2.title': 'More of the world in Portuguese',
       'news.2.text': 'Client v0.0.39 brings the quest log, map notes, region names and NPC suggestions to Portuguese, smarter auto-targeting and a more stable client. Your settings and explored map come along.',
       'news.3.title': 'An active community',
@@ -270,10 +272,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.41',
+      'patch.title': 'Novidades da v0.0.42',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Ajustes gerais no cliente',
-      'patch.2': 'Ícone de troca dos NPCs e sugestões de diálogo voltaram a funcionar',
+      'patch.1': 'Magias em linha mostram a área real enquanto você mira, e as runas equipadas aparecem nos números das magias',
+      'patch.2': 'A Queen Zoe mostra sua barra de vida de chefe, o brilho dos anéis para quando o anel acaba, e correções gerais no cliente',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
@@ -320,6 +322,8 @@
       'news.1.text': 'O cliente v0.0.24 dá ao Market as janelas, os ícones e as fontes pixeladas do próprio jogo, com a raridade de cada item à vista. Compre, venda e crie ordens direto do depot.',
       'news.5.title': 'Montarias e o Estábulo do Domador',
       'news.5.text': 'O cliente v0.0.29 dá a todos os jogadores uma janela de Montarias: escolha, monte e cure suas montarias. Bram, o domador de feras, abre seu estábulo na rua do mercado: ganhe a confiança dele e ele tem um rat shipper para você.',
+      'news.6.title': 'Magias, runas e chefes',
+      'news.6.text': 'Cliente v0.0.42: magias em linha mostram a área real enquanto você mira, as runas equipadas aparecem nos números das magias e a Queen Zoe ganha sua barra de vida de chefe.',
       'news.2.title': 'Mais do mundo em português',
       'news.2.text': 'O cliente v0.0.39 traz o diário de missões, as notas do mapa, os nomes das regiões e as sugestões dos NPCs em português, mira automática mais esperta e um cliente mais estável. Suas configurações e o mapa explorado vêm junto.',
       'news.3.title': 'Comunidade ativa',
