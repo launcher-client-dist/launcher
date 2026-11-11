@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.8, client v0.0.39), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.9, client v0.0.40), refreshed from GitHub on load.
   const release = {
-    launcherVersion: '0.3.8',
-    launcherBytes: 66413678,
-    launcherSha: 'b3d6a6e66cb422cfedd84c641c77658eb7e9db4ae16291a854a656dd4f3bf8c7',
-    clientVersion: '0.0.39',
-    clientBytes: 488199742,
-    clientInstalledBytes: 778150394
+    launcherVersion: '0.3.9',
+    launcherBytes: 66414644,
+    launcherSha: 'e3a72746a51678a6fe78002a2eea3c32a2a33e497711a7d811e7842c66dcc1c9',
+    clientVersion: '0.0.40',
+    clientBytes: 488217075,
+    clientInstalledBytes: 778171651
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.39',
+      'patch.title': 'Latest in v0.0.40',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'Quest log, map notes and NPC suggestions in Portuguese',
-      'patch.2': 'Improved auto-targeting and overall stability',
+      'patch.1': 'General client adjustments and improved stability',
+      'patch.2': 'General fixes and polish',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -270,10 +270,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.39',
+      'patch.title': 'Novidades da v0.0.40',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Diário de missões, notas do mapa e sugestões dos NPCs em português',
-      'patch.2': 'Mira automática e estabilidade geral melhoradas',
+      'patch.1': 'Ajustes gerais no cliente e estabilidade melhorada',
+      'patch.2': 'Correções e polimento gerais',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
