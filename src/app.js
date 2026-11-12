@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.9, client v0.0.42), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.9, client v0.0.43), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.9',
     launcherBytes: 66414644,
     launcherSha: 'e3a72746a51678a6fe78002a2eea3c32a2a33e497711a7d811e7842c66dcc1c9',
-    clientVersion: '0.0.42',
-    clientBytes: 488224961,
-    clientInstalledBytes: 778188584
+    clientVersion: '0.0.43',
+    clientBytes: 488319811,
+    clientInstalledBytes: 778823579
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.42',
+      'patch.title': 'Latest in v0.0.43',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'Line spells show their real area while you aim, and equipped runes show in your spell numbers',
-      'patch.2': 'Queen Zoe shows her boss health bar, ring sparkles stop when the ring runs out, and general client fixes',
+      'patch.1': 'Fewer short freezes in fights and when you open a window, and Escape closes more windows',
+      'patch.2': 'The logout confirmation shows in front of Options, the death screen no longer stays grey after you die on a mount, and general client fixes',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -272,10 +272,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.42',
+      'patch.title': 'Novidades da v0.0.43',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Magias em linha mostram a área real enquanto você mira, e as runas equipadas aparecem nos números das magias',
-      'patch.2': 'A Queen Zoe mostra sua barra de vida de chefe, o brilho dos anéis para quando o anel acaba, e correções gerais no cliente',
+      'patch.1': 'Menos travadinhas em lutas e ao abrir janelas, e o Esc fecha mais janelas',
+      'patch.2': 'A confirmação de logout aparece na frente das Opções, a tela de morte não fica mais cinza depois de morrer montado, e correções gerais no cliente',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
