@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.9, client v0.0.43), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.9, client v0.1.0), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.9',
     launcherBytes: 66414644,
     launcherSha: 'e3a72746a51678a6fe78002a2eea3c32a2a33e497711a7d811e7842c66dcc1c9',
-    clientVersion: '0.0.43',
-    clientBytes: 488319811,
-    clientInstalledBytes: 778823579
+    clientVersion: '0.1.0',
+    clientBytes: 488352438,
+    clientInstalledBytes: 778887644
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.0.43',
+      'patch.title': 'Latest in v0.1.0',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'Better client stability and smoother gameplay',
-      'patch.2': 'Easier windows, a cleaner top bar and general client fixes',
+      'patch.1': 'A more stable connection and smoother server restarts',
+      'patch.2': 'A faster Global chat and general client adjustments',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -272,10 +272,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.0.43',
+      'patch.title': 'Novidades da v0.1.0',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Mais estabilidade no cliente e jogabilidade mais fluida',
-      'patch.2': 'Janelas mais práticas, barra do topo mais limpa e correções gerais no cliente',
+      'patch.1': 'Conexão mais estável e reinícios do servidor mais tranquilos',
+      'patch.2': 'Chat Global mais rápido e ajustes gerais no cliente',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
