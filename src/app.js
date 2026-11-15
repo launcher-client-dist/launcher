@@ -8,11 +8,11 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.9, client v0.1.1), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.10, client v0.1.1), refreshed from GitHub on load.
   const release = {
-    launcherVersion: '0.3.9',
-    launcherBytes: 66414644,
-    launcherSha: 'e3a72746a51678a6fe78002a2eea3c32a2a33e497711a7d811e7842c66dcc1c9',
+    launcherVersion: '0.3.10',
+    launcherBytes: 66415000,
+    launcherSha: 'b342b74172874327067038ccf8b9e79e7b59ad27dd55fc15811df85b86516c36',
     clientVersion: '0.1.1',
     clientBytes: 488359305,
     clientInstalledBytes: 778562418
@@ -121,10 +121,10 @@
       'news.1.text': "Client v0.0.24 gives the Market the game's own windows, icons and pixel fonts, with every item's rarity at a glance. Buy, sell and place orders right from your depot.",
       'news.5.title': "Mounts and the Tamer's Stable",
       'news.5.text': 'Client v0.0.29 gives every player a Mounts window: pick, ride and heal your mounts. Bram the beast tamer opens his stable by the market road: earn his trust and he has a rat shipper for you.',
+      'news.7.title': 'FPS and ping on screen, smarter bags',
+      'news.7.text': 'Client v0.1.1: see your FPS and ping while you play, shift-click straight into the next bag with room, and get back into the world more smoothly after a server restart.',
       'news.6.title': 'Spells, runes and bosses',
       'news.6.text': 'Client v0.0.42: line spells show their real area while you aim, equipped runes show in your spell numbers and Queen Zoe gets her boss health bar.',
-      'news.2.title': 'More of the world in Portuguese',
-      'news.2.text': 'Client v0.0.39 brings the quest log, map notes, region names and NPC suggestions to Portuguese, smarter auto-targeting and a more stable client. Your settings and explored map come along.',
       'news.3.title': 'An active community',
       'news.3.text': 'Call your friends to take on quests and slay bosses together.',
       'news.readCommunity': 'See the screenshots',
@@ -200,8 +200,6 @@
       'req.copy': 'Copy',
       'req.copied': 'SHA-256 copied to the clipboard',
       'req.copyFailed': 'Could not copy; select the hash instead',
-      'req.base': 'Game client',
-      'req.baseValue': 'Opengea 3.2.6',
       'req.installed': 'Installed size',
       'req.free': 'Free space to install',
       'req.freeValue': '≈ 1.3 GB (during install)',
@@ -322,10 +320,10 @@
       'news.1.text': 'O cliente v0.0.24 dá ao Market as janelas, os ícones e as fontes pixeladas do próprio jogo, com a raridade de cada item à vista. Compre, venda e crie ordens direto do depot.',
       'news.5.title': 'Montarias e o Estábulo do Domador',
       'news.5.text': 'O cliente v0.0.29 dá a todos os jogadores uma janela de Montarias: escolha, monte e cure suas montarias. Bram, o domador de feras, abre seu estábulo na rua do mercado: ganhe a confiança dele e ele tem um rat shipper para você.',
+      'news.7.title': 'FPS e ping na tela, bolsas mais espertas',
+      'news.7.text': 'Cliente v0.1.1: veja seu FPS e ping enquanto joga, use Shift+clique direto na próxima bolsa com espaço e volte ao mundo com mais tranquilidade depois de um reinício do servidor.',
       'news.6.title': 'Magias, runas e chefes',
       'news.6.text': 'Cliente v0.0.42: magias em linha mostram a área real enquanto você mira, as runas equipadas aparecem nos números das magias e a Queen Zoe ganha sua barra de vida de chefe.',
-      'news.2.title': 'Mais do mundo em português',
-      'news.2.text': 'O cliente v0.0.39 traz o diário de missões, as notas do mapa, os nomes das regiões e as sugestões dos NPCs em português, mira automática mais esperta e um cliente mais estável. Suas configurações e o mapa explorado vêm junto.',
       'news.3.title': 'Comunidade ativa',
       'news.3.text': 'Chame seus amigos para fazer quests e matar bosses juntos.',
       'news.readCommunity': 'Ver as capturas',
@@ -401,8 +399,6 @@
       'req.copy': 'Copiar',
       'req.copied': 'SHA-256 copiado para a área de transferência',
       'req.copyFailed': 'Não foi possível copiar; selecione o hash',
-      'req.base': 'Cliente do jogo',
-      'req.baseValue': 'Opengea 3.2.6',
       'req.installed': 'Tamanho instalado',
       'req.free': 'Espaço livre para instalar',
       'req.freeValue': '≈ 1,3 GB (durante a instalação)',
