@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.9, client v0.1.0), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.9, client v0.1.1), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.9',
     launcherBytes: 66414644,
     launcherSha: 'e3a72746a51678a6fe78002a2eea3c32a2a33e497711a7d811e7842c66dcc1c9',
-    clientVersion: '0.1.0',
-    clientBytes: 488352438,
-    clientInstalledBytes: 778887644
+    clientVersion: '0.1.1',
+    clientBytes: 488359305,
+    clientInstalledBytes: 778562418
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.1.0',
+      'patch.title': 'Latest in v0.1.1',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'A more stable connection and smoother server restarts',
-      'patch.2': 'A faster Global chat and general client adjustments',
+      'patch.1': 'FPS and ping on screen, and shift-click into the next bag with room',
+      'patch.2': 'Smoother return after server restarts, fixed rune tooltips and general fixes',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -272,10 +272,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.1.0',
+      'patch.title': 'Novidades da v0.1.1',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Conexão mais estável e reinícios do servidor mais tranquilos',
-      'patch.2': 'Chat Global mais rápido e ajustes gerais no cliente',
+      'patch.1': 'FPS e ping na tela, e Shift+clique direto na próxima bolsa com espaço',
+      'patch.2': 'Volta mais tranquila após reinícios do servidor, dicas das runas corrigidas e correções gerais',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
