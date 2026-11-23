@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.10, client v0.1.2), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.10, client v0.2.0), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.10',
     launcherBytes: 66415000,
     launcherSha: 'b342b74172874327067038ccf8b9e79e7b59ad27dd55fc15811df85b86516c36',
-    clientVersion: '0.1.2',
-    clientBytes: 488537936,
-    clientInstalledBytes: 778829342
+    clientVersion: '0.2.0',
+    clientBytes: 488923088,
+    clientInstalledBytes: 779609173
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.1.2',
+      'patch.title': 'Latest in v0.2.0',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'The world map opens again after switching characters',
-      'patch.2': 'Region names in the game logs for faster help, groundwork for upcoming features and general fixes',
+      'patch.1': 'Professions: Scavenging and Fishing, with their own levels, rewards and window',
+      'patch.2': 'This version is required to play: the launcher downloads it by itself',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -121,6 +121,8 @@
       'news.1.text': "Client v0.0.24 gives the Market the game's own windows, icons and pixel fonts, with every item's rarity at a glance. Buy, sell and place orders right from your depot.",
       'news.5.title': "Mounts and the Tamer's Stable",
       'news.5.text': 'Client v0.0.29 gives every player a Mounts window: pick, ride and heal your mounts. Bram the beast tamer opens his stable by the market road: earn his trust and he has a rat shipper for you.',
+      'news.9.title': 'Professions arrive: Scavenging and Fishing',
+      'news.9.text': 'Client v0.2.0 brings Professions to Opengea. Search the barrels, crates and pots of the world as a Scavenger, or grab a rod and bait and fish rivers, swamps and the sea. Each Profession has its own levels and rewards, and they open in the world in steps over the next days.',
       'news.8.title': 'Version 0.1.0: a milestone for Opengea',
       'news.8.text': 'Client v0.1.0 is all about keeping you in the game: a steadier connection, much smoother server restarts and a quicker Global chat.',
       'news.8.cta': 'The launcher downloads every update by itself. Thanks for playing, and see you in game!',
@@ -271,10 +273,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.1.2',
+      'patch.title': 'Novidades da v0.2.0',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'O mapa-múndi volta a abrir depois de trocar de personagem',
-      'patch.2': 'Nome da região nos logs do jogo para ajuda mais rápida, preparação para novidades e correções gerais',
+      'patch.1': 'Profissões: Coleta e Pesca, com níveis, recompensas e janela próprios',
+      'patch.2': 'Esta versão é obrigatória para jogar: o launcher baixa sozinho',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
@@ -321,6 +323,8 @@
       'news.1.text': 'O cliente v0.0.24 dá ao Market as janelas, os ícones e as fontes pixeladas do próprio jogo, com a raridade de cada item à vista. Compre, venda e crie ordens direto do depot.',
       'news.5.title': 'Montarias e o Estábulo do Domador',
       'news.5.text': 'O cliente v0.0.29 dá a todos os jogadores uma janela de Montarias: escolha, monte e cure suas montarias. Bram, o domador de feras, abre seu estábulo na rua do mercado: ganhe a confiança dele e ele tem um rat shipper para você.',
+      'news.9.title': 'As Profissões chegaram: Coleta e Pesca',
+      'news.9.text': 'O cliente v0.2.0 traz as Profissões para o Opengea. Vasculhe os barris, caixas e potes do mundo na Coleta, ou pegue uma vara e iscas e pesque em rios, pântanos e no mar. Cada Profissão tem seus níveis e recompensas, e elas abrem no mundo aos poucos nos próximos dias.',
       'news.8.title': 'Versão 0.1.0: um marco para o Opengea',
       'news.8.text': 'O cliente v0.1.0 é todo sobre manter você no jogo: conexão mais estável, reinícios do servidor muito mais tranquilos e um Chat Global mais rápido.',
       'news.8.cta': 'O launcher baixa cada atualização sozinho. Obrigado por jogar e nos vemos no jogo!',
