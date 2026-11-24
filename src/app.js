@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.10, client v0.2.0), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.10, client v0.2.1), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.10',
     launcherBytes: 66415000,
     launcherSha: 'b342b74172874327067038ccf8b9e79e7b59ad27dd55fc15811df85b86516c36',
-    clientVersion: '0.2.0',
-    clientBytes: 488923088,
-    clientInstalledBytes: 779609173
+    clientVersion: '0.2.1',
+    clientBytes: 488926454,
+    clientInstalledBytes: 779616339
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.2.0',
+      'patch.title': 'Latest in v0.2.1',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'Professions: Scavenging and Fishing, with their own levels, rewards and window',
-      'patch.2': 'This version is required to play: the launcher downloads it by itself',
+      'patch.1': 'Fishing: the key to hook a fish is shown next to the bar and lights up when a press counts',
+      'patch.2': 'The trade window now shows a fish’s rarity and the gold you will really get',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -273,10 +273,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.2.0',
+      'patch.title': 'Novidades da v0.2.1',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Profissões: Coleta e Pesca, com níveis, recompensas e janela próprios',
-      'patch.2': 'Esta versão é obrigatória para jogar: o launcher baixa sozinho',
+      'patch.1': 'Pesca: a tecla para fisgar aparece ao lado da barra e acende quando o toque vale',
+      'patch.2': 'A janela de troca agora mostra a raridade do peixe e o ouro que você vai receber de verdade',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
