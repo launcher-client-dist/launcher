@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.10, client v0.2.3), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.10, client v0.2.4), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.10',
     launcherBytes: 66415000,
     launcherSha: 'b342b74172874327067038ccf8b9e79e7b59ad27dd55fc15811df85b86516c36',
-    clientVersion: '0.2.3',
-    clientBytes: 490415610,
-    clientInstalledBytes: 781498470
+    clientVersion: '0.2.4',
+    clientBytes: 490889610,
+    clientInstalledBytes: 782614367
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.2.3',
+      'patch.title': 'Latest in v0.2.4',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'Turn Off Shadows in Options: a lighter game on modest PCs',
-      'patch.2': 'Mounts lie down and rest while their rider sits',
+      'patch.1': 'The Drowned Labyrinth: a new maze under the sea south of Vecan, with a guarded Chamber and its chest',
+      'patch.2': 'Signs can now show text in your language',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -273,10 +273,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.2.3',
+      'patch.title': 'Novidades da v0.2.4',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Desativar Sombras nas Opções: o jogo mais leve em PCs modestos',
-      'patch.2': 'As montarias deitam e descansam enquanto o cavaleiro está sentado',
+      'patch.1': 'O Labirinto Afogado: um novo labirinto sob o mar ao sul de Vecan, com uma Câmara vigiada e seu baú',
+      'patch.2': 'As placas agora podem mostrar o texto no seu idioma',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
