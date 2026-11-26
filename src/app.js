@@ -8,14 +8,14 @@
   const CLIENT_REPO = 'launcher-client-dist/dist';
   const DOWNLOAD_URL = `https://github.com/${LAUNCHER_REPO}/releases/latest/download/ClientLauncher.exe`;
 
-  // Fallback release data (launcher v0.3.10, client v0.2.4), refreshed from GitHub on load.
+  // Fallback release data (launcher v0.3.10, client v0.2.5), refreshed from GitHub on load.
   const release = {
     launcherVersion: '0.3.10',
     launcherBytes: 66415000,
     launcherSha: 'b342b74172874327067038ccf8b9e79e7b59ad27dd55fc15811df85b86516c36',
-    clientVersion: '0.2.4',
-    clientBytes: 490889610,
-    clientInstalledBytes: 782614367
+    clientVersion: '0.2.5',
+    clientBytes: 491590302,
+    clientInstalledBytes: 783953602
   };
 
   /* ------------------------------------------------------------------ */
@@ -71,10 +71,10 @@
       'hero.badge2': '100% FREE',
       'hero.title': 'YOUR ADVENTURE AWAITS IN OPENGEA.',
       'hero.lead': 'Download the <span data-rel="launcherSize"></span> Opengea launcher: it installs the Opengea client, keeps it on the latest build and verifies your files. No .NET install, no admin rights.',
-      'patch.title': 'Latest in v0.2.4',
+      'patch.title': 'Latest in v0.2.5',
       'patch.all': 'All notes in the launcher →',
-      'patch.1': 'A portal now glows at the foot of the old tomb walls south of Vecan. Where it leads is for you to find out',
-      'patch.2': 'Signs can now show text in your language',
+      'patch.1': 'The Mana Shield icon now counts down its remaining seconds',
+      'patch.2': 'A corner of the swamp that showed black ground now shows its ground',
       'tag.new': 'NEW',
       'tag.improved': 'IMPROVED',
       'tag.fixed': 'FIXED',
@@ -280,10 +280,10 @@
       'hero.badge2': '100% GRATUITO',
       'hero.title': 'SUA AVENTURA TE ESPERA EM OPENGEA.',
       'hero.lead': 'Baixe o launcher do Opengea (<span data-rel="launcherSize"></span>): ele instala o cliente Opengea, mantém tudo na versão mais recente e verifica seus arquivos. Sem instalar .NET, sem precisar de administrador.',
-      'patch.title': 'Novidades da v0.2.4',
+      'patch.title': 'Novidades da v0.2.5',
       'patch.all': 'Notas completas no launcher →',
-      'patch.1': 'Um portal agora brilha ao pé das antigas muralhas dos túmulos, ao sul de Vecan. Para onde ele leva, cabe a você descobrir',
-      'patch.2': 'As placas agora podem mostrar o texto no seu idioma',
+      'patch.1': 'O ícone do Mana Shield agora conta os segundos que faltam',
+      'patch.2': 'Um canto do pântano que mostrava o chão preto agora mostra o chão',
       'tag.new': 'NOVO',
       'tag.improved': 'MELHORIA',
       'tag.fixed': 'CORREÇÃO',
